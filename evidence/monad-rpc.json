@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-09T06:58:12.744Z",
+  "endpoint": "https://testnet-rpc.monad.xyz",
+  "readOnly": true,
+  "contractDeployed": false,
+  "chainId": 10143,
+  "blockNumber": "69474621",
+  "blockHash": "0x11861c4e14d38ac79e80fecd98185ab5f061c847a6ee43a8a8580b6e70f4f9a0",
+  "blockTimestamp": "2026-10-09T06:58:14.000Z",
+  "status": "reachable"
+}

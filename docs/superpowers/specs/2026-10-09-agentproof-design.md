@@ -4,7 +4,7 @@ New work begins 9 October 2026 in this independent directory. No Portaldot or Bi
 
 ## Choice and success criteria
 
-Choose Trust, Identity & AI Infrastructure. An agent delivery receipt is a narrower, demoable product than a payments application (funds and onboarding risk) or a general agent marketplace (liquidity and large scope). Official public rules identify the track and required deliverables, but publish no detailed scoring weights. This recommendation is a fit and delivery-risk judgment, not a claimed scoring advantage.
+Choose Trust, Identity & AI Infrastructure. An agent delivery receipt is a narrower, demoable product than a payments application (funds and onboarding risk) or a general agent marketplace (liquidity and large scope). The platform v3 rules give five equally weighted criteria: completeness, technical quality, Monad integration, track/problem fit and innovation/impact. This choice prioritizes a coherent, inspectable workflow within the remaining build window; it does not predict a judging advantage.
 
 Success: a reviewer can run a synthetic document-checking workflow, publish salted commitments for the input, output and policy, independently recompute the output commitment, detect tampering, and issue a designated-reviewer attestation. The UI visibly distinguishes a local EVM demonstration from actual Monad Testnet. An onchain receipt establishes publisher, timestamp and integrity; it does not establish factual accuracy, legal compliance or correct AI execution.
 
@@ -26,4 +26,4 @@ Contract tests run real compiled bytecode in an isolated EVM, including unauthor
 
 ## Delivery and boundaries
 
-Prepare README, English public-profile draft, short pitch, demo script, rules matrix, reproducibility commands, deployment checklist and acceptance evidence. Public push/deploy/final entry and any new agreement/OAuth grant remain explicit approval steps. Registration/login is pending user login. Exact deadline time/timezone, platform rules, eligibility and fees remain unverified until official platform is accessible. Target readiness by 12 October UTC as an internal buffer, not an official deadline.
+Prepare README, English public-profile draft, short pitch, demo script, rules matrix, reproducibility commands, deployment checklist and acceptance evidence. Public push/deploy/final entry and any new agreement/OAuth grant remain explicit approval steps. The logged-in Dashboard now shows profile completion. Deadline: 13 October 2026 23:59 ET = 14 October 03:59 UTC / 11:59 Beijing, confirmed independently by the dashboard. Platform v3 requires public GitHub source and an OSI license. MIT is proposed, with public release pending owner approval. Individual eligibility is not assumed. Target readiness by 12 October UTC as an internal buffer, not an official deadline.
