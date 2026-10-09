@@ -1,0 +1,8 @@
+node_modules/
+dist/
+artifacts/
+.env*
+!.env.example
+evidence/local-chain.json
+*.log
+.DS_Store

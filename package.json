@@ -1,0 +1,17 @@
+{
+  "name": "agentproof-monad",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/compile.mjs && vite build",
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node scripts/local-demo.mjs",
+    "check:monad": "node scripts/check-monad.mjs",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": { "viem": "2.38.5" },
+  "devDependencies": { "vite": "7.1.9", "solc": "0.8.30", "ganache": "7.9.2" },
+  "engines": { "node": ">=22.13.0" }
+}
