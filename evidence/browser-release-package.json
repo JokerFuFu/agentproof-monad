@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "version": "agentproof/1",
+    "taskId": "0x9d5f66797232863f0e58c22b567d7b13877c06e41b7dd2e3247c2e6b1a02e9aa",
+    "salt": "835554be147dc511e387d8572bcde7e7d5b51d66cec5d5d8ee5d26ab81c7c675",
+    "input": "Synthetic event brief — not official rules\nSubmission deadline: 2026-10-13.\nRequired deliverables: a working demo, code link, and short write-up.\nIndividuals or teams can participate.\nThe exact cutoff time and timezone are not specified in this brief.",
+    "output": "{\n  \"agent\": \"Checklist agent v1 (deterministic, no LLM)\",\n  \"checks\": [\n    {\n      \"id\": \"deadline\",\n      \"label\": \"Submission date\",\n      \"status\": \"found\",\n      \"evidence\": \"2026-10-13\"\n    },\n    {\n      \"id\": \"timezone\",\n      \"label\": \"Explicit cutoff timezone\",\n      \"status\": \"missing\",\n      \"evidence\": null\n    },\n    {\n      \"id\": \"demo\",\n      \"label\": \"Working demo\",\n      \"status\": \"found\",\n      \"evidence\": \"working demo\"\n    },\n    {\n      \"id\": \"code\",\n      \"label\": \"Code link\",\n      \"status\": \"found\",\n      \"evidence\": \"code link\"\n    },\n    {\n      \"id\": \"writeup\",\n      \"label\": \"Short write-up\",\n      \"status\": \"found\",\n      \"evidence\": \"write-up\"\n    }\n  ],\n  \"note\": \"Presence checks only. This report does not establish eligibility or factual correctness.\"\n}",
+    "policy": "agentproof/checklist-v1: detect explicit deadline, timezone, demo, code link and write-up; report exact source snippets; mark absent fields as missing; do not infer eligibility.",
+    "commitments": {
+      "input": "0x283b8a76babcb4551ba0d347365e4132d8f83f56afd18dcb394a181a05140836",
+      "output": "0xc1768d721a818b00caaa42a4d009befe90d0a270353c6924d88f35c9d46fe746",
+      "policy": "0x2597e97c05f0d8a81069cdac942eb51404336b3a8bf5ddb1c593b6da5b78fa49"
+    }
+  },
+  "anchor": {
+    "chainId": 31337,
+    "address": "0x1c3255c2b0d6fd57888443f4e8dde7d2638727c9",
+    "receiptId": "0x6f28f4b44cb3adf9e1d92eea4fb352aa42d8792fbe13acedc11d1d5edebaa65b",
+    "publishTx": "0xb2882ca75f09a2949cf127bbf12c2af1bbc23ea7773b0375ffce3d1ff907be9f",
+    "verified": true,
+    "agentId": "0xd44ff28a33285dab0115f40d402b28b2eb03bdab94af6c032bc13dbd63586423",
+    "owner": "0x6f5F43422FD97AdaB7b892EDb7F6117Dc260c6dC",
+    "reviewer": "0x86fbfF458e208A182D17616fB4470661285eDC9d",
+    "blockNumber": "3",
+    "expiresAt": "1791625819",
+    "status": 2,
+    "reviewEvidenceHash": "0xac376d4262fd111a05de45f5905276dd5b0dd76c4481b9b752a5d9e96c64888a"
+  }
+}

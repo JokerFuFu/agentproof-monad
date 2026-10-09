@@ -10,7 +10,7 @@
 
 Local browser publication evidence: registry `0x27097fe6a60f1248891a803318a4bac014c625c4`, receipt `0x482943ccfd992f98294cb0598b186fdd04bc56a586b929da21eecdac9266fdb3`, transaction `0x795ed43c7bdd46a8ecf9d73832c45c93b1e29881cf5bd3c02c1c9f695cfb1f60`. The local chain is disposable; restarting replaces it and makes these coordinates historical evidence only.
 
-Not validated yet: injected-wallet Testnet end-to-end signatures, public hosting, public video, final contest declarations or final entry. Do not claim these are complete.
+At this initial check, injected-wallet Testnet signatures, public hosting, public video and final entry were not validated. Public hosting was subsequently verified below; Testnet signatures, videos and final entry remain pending.
 
 ## Resumed acceptance — 9 October, 16:50 Beijing
 
@@ -26,4 +26,16 @@ The last code change adds a visible deployment-evidence JSON backup and avoids c
 
 Fresh `npm test`: **12 passed, 0 failed** (2,017.7 ms). Final `npm run build`: upstream license texts for all 13 installed production dependency distributions are preserved; both contract targets compile to 2,850-byte deployment artifacts and Vite builds successfully (1.67 s). A loopback static server served the compiled bundle under `/agentproof-monad/`; HTML, JavaScript, stylesheet and logo all returned HTTP 200 and stayed under that project path. This verifies static path resolution, not public deployment or the injected-wallet flow.
 
-The browser-control connection stopped after the form displayed Saving. Later form persistence, logo upload, new deployment-export UI, and real Testnet end-to-end behavior remain unverified. No final entry or public release was performed.
+The browser-control connection stopped after the form displayed Saving. At that checkpoint, form persistence and public release had not yet been confirmed. The later checks below resolve those two items. The injected-wallet deployment-export UI and real Testnet end-to-end behavior remain unverified.
+
+## Authorized MIT release and public acceptance
+
+After the owner authorized the public MIT release, viem was updated to 2.57.4 and both artifacts rebuilt. Tests passed **12/12**, 0 failed (2,291.8 ms), and the final site build succeeded (1.09 s). See `dependency-audit.md` for the remaining Ganache development-tree advisories; an all-dependencies-clean claim would be incorrect.
+
+The public repository is `https://github.com/JokerFuFu/agentproof-monad`, default branch `develop`, with the MIT license. Free GitHub Pages serves `https://jokerfufu.github.io/agentproof-monad/` from `gh-pages`. The Pages API reports built, HTTPS enforced. The actual public browser page successfully runs the deterministic agent, reports matching artifacts as **Not anchored on a chain**, detects a changed output as **Output commitment mismatch**, and matches again after Restore. Root license and third-party runtime notices are shipped with the static site. No Monad transaction is implied.
+
+Because changing the contract SPDX changes compiler metadata, the disposable loopback chain was restarted to deploy the current MIT bytecode. Browser connect → run → publish → reviewer accepts → live verify succeeds. The visible export backup was saved as `evidence/browser-release-package.json` and imported through the actual file chooser. Imported status was initially unverified; live verification reconstructed **Accepted**. This new receipt is left accepted for the local demonstration rather than revoked. Local chain restarts and expiry can invalidate later replay.
+
+Current local registry `0x1c3255c2b0d6fd57888443f4e8dde7d2638727c9`, receipt `0x6f28f4b44cb3adf9e1d92eea4fb352aa42d8792fbe13acedc11d1d5edebaa65b`, publication `0xb2882ca75f09a2949cf127bbf12c2af1bbc23ea7773b0375ffce3d1ff907be9f`, chain 31337. These are local evidence, not Monad addresses or transactions.
+
+A fresh authenticated platform page confirms the saved draft at **09:50 UTC on 9 October**, checklist **3/5**, with logo, selected track, description, acquisition text, public repository URL and judge instructions. Live product and both video links remain blank. The user has no test wallet and requested retaining the prototype; no final contest entry was submitted.
