@@ -5,7 +5,7 @@ import {validateAnchor} from './anchor.mjs';
 import {isAddress} from 'viem';
 
 document.querySelector('#app').innerHTML=`
-<header><a class="brand" href="./">Agent<span>Proof</span><i aria-hidden="true">✓</i></a><span class="event">Built for Metropolis 2026</span><div class="network" id="network">Offline</div></header>
+<header><a class="brand" href="./">Agent<span>Proof</span><i aria-hidden="true">✓</i></a><span class="event">Metropolis 2026 · Prototype / Testnet deployment pending</span><div class="network" id="network">Offline</div></header>
 <main>
   <section class="intro"><div><h1>Give every agent delivery<br>a verifiable receipt.</h1><p>Track who delivered it, detect changed work, and record the reviewer’s decision.</p></div><div class="boundary"><b>Provenance, integrity, accountability.</b><p>A matching hash proves an unchanged artifact. Its accuracy still needs a reviewer.</p></div></section>
   <section class="connection" aria-label="Network connection"><div class="switch"><button id="local" class="selected">Local EVM demo</button><button id="monad">Monad Testnet</button></div><span id="connectionText">Connect the disposable local chain to explore.</span><button id="connect">Connect local demo</button></section>

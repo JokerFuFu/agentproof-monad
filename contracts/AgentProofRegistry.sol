@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.30;
 
 /// @notice Provenance and designated-reviewer receipts; does not prove AI correctness.
