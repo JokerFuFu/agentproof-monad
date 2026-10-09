@@ -14,8 +14,8 @@ Policy §4.2 uses **13 October 2026, 11:59 PM ET**. America/New_York is UTC−4 
 | Working product | Runnable third-party prototype | Local UI and real local contract work; public static prototype browser-verified; actual Monad deployment pending |
 | Public GitHub source | §§4.1 and 7.2: full source, setup README, OSI license, build-window history | Full source pushed to public JokerFuFu/agentproof-monad; MIT applied |
 | AI / external attribution | Disclose tools and dependencies | Drafted in README and project text |
-| Technical demo video | Public link, real operation, ≤3 minutes | Script drafted; recording/upload pending |
-| Pitch video | Submission form requires a separate ≤2-minute video | Script drafted; recording/upload pending |
+| Technical demo video | Public link, real operation, ≤3 minutes | Actual 64-second local prototype walkthrough recorded; final Monad technical demo still pending |
+| Pitch video | Submission form requires a separate ≤2-minute video | Actual 64-second subtitle-only Pitch recorded; published in the same public GitHub Release; details in recorded-videos.md |
 | Project logo | Form requires PNG/JPG/WEBP, ≥500 px, ≤2 MB, ≤4 million pixels | Original 1024×1024 PNG, 28,395 bytes uploaded; preview and saved form verified |
 | Monad integration | Testnet or mainnet contract/transaction evidence | RPC 10143 verified; no contract deployment yet |
 | Project page / description / acquisition strategy | Required platform fields and truthful statements | Private solo project created; track, description, acquisition, logo, GitHub URL and access instructions persisted; last saved 09:50 UTC |
@@ -38,7 +38,11 @@ Public submissions retain entrant ownership but grant organizer/sponsors an ongo
 
 1. **Public source release:** Completed under explicit owner authorization on 9 October for public `JokerFuFu/agentproof-monad` source and MIT. Ownership/open-source permission was confirmed. The repository is PUBLIC, full source is pushed, and original code has the MIT license. No secrets, private profile email, customer code or unrelated project files are included.
 2. **Testnet signatures:** The user says no test wallet is available yet and asks to retain the current prototype. Deployment/publication/review on Monad remains pending. User-controlled signatures will expose public addresses/hashes and spend test MON on gas. No real-fund transaction is authorized.
-3. **Public demo/video hosting:** Free GitHub Pages at `https://jokerfufu.github.io/agentproof-monad/` is built and browser-verified. Root license and upstream runtime notices are included. Authorization also covers later public MP4 uploads to the same repository's GitHub Release after real recording; videos do not exist yet. No paid plan, custom domain or new OAuth provider was used. Do not ask for the same authorized scope again.
+3. **Public demo/video hosting:** Free GitHub Pages at `https://jokerfufu.github.io/agentproof-monad/` is built and browser-verified. Root license and upstream runtime notices are included. Authorization also covers public MP4 uploads to the same repository's GitHub Release. Two actual 64-second videos have now been recorded; the prototype walkthrough and compact Pitch are confirmed public in the same Release; details in recorded-videos.md. No paid plan, custom domain or new OAuth provider was used. Do not ask for the same authorized scope again.
 4. **Final submission:** Review the complete platform page, real code/demo/video/contract links and each declaration immediately before Submit. No final submission approval has been obtained.
 
 If registration requires a new explicit agreement, present the exact policy, Terms and Privacy links together and obtain action-time confirmation. Ordinary setup and confirmed profile fields should not be asked again.
+
+## Latest prototype recheck
+
+The fresh prototype fixes pass 21/21 tests and the Vite 7.3.7 build. The public page starts with Artifact checks; real Chrome run/tamper/restore and file import were tested. Imported local evidence matches artifact commitments but is explicitly marked Chain status unverified. The current native Chrome platform session is at the provider-login page; no new account, agreement or final submission was made. The earlier saved 3/5 platform observation above remains historical.

@@ -21,3 +21,7 @@ Show the product running, its actual confirmed receipt and the tamper result. Me
 “We are starting with small teams that need human sign-off on agent-generated research and operational work. Our first step is a reproducible developer release and an opt-in pilot around one delivery-and-review workflow. We will measure successful first verification and repeat use. Monad's EVM environment lets us make publication and review history independently inspectable with familiar tools.”
 
 End with the real product URL and repository URL after publication. Leave a few seconds of timing buffer below two minutes.
+
+## Recorded subtitle-only alternative
+
+An actual 64-second project Pitch now uses real local-prototype screen captures and explanatory subtitles. It names JokerFuFu as the solo builder in third person, without synthesizing the entrant's voice or likeness. The exact captions are in `video-captions.json` and the capture/output hash record is `evidence/recording-manifest.json`. Every segment discloses local EVM and pending Monad deployment. See `recorded-videos.md` for confirmed public-hosting status.

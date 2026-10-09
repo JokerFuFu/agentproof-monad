@@ -1,0 +1,70 @@
+{
+  "prototype": [
+    [
+      "AgentProof: actual local prototype",
+      "Real browser operations captured at 1 fps and edited into this walkthrough. Synthetic data only."
+    ],
+    [
+      "1 / Run the checking agent",
+      "The deterministic checklist reports exact source matches and leaves the missing timezone visible. No LLM is used."
+    ],
+    [
+      "2 / Publish a receipt",
+      "A real disposable EVM transaction records the source, output and policy commitments. Publication confirmed in local block 3."
+    ],
+    [
+      "3 / Reviewer accepts",
+      "A separate sandbox reviewer records acceptance. Integrity is checked against the live local contract; acceptance is a reviewer opinion."
+    ],
+    [
+      "4 / Change the artifact",
+      "The delivered text was changed after publication. Live verification reports: Output commitment mismatch."
+    ],
+    [
+      "5 / Restore the original",
+      "Restoring the committed delivery passes live verification again. The recorded reviewer state remains Accepted."
+    ],
+    [
+      "6 / Export portable evidence",
+      "The browser downloads the proof JSON and displays a copyable backup. The package includes the source, output and salt."
+    ],
+    [
+      "Monad validation remains pending",
+      "No Monad contract or transaction is shown. Two user-controlled test wallets are still needed for Testnet deployment and final chain verification."
+    ]
+  ],
+  "pitch": [
+    [
+      "AgentProof / Solo builder: JokerFuFu",
+      "An AI product and engineering lead building verifiable agent workflows. Problem: reviewers lose track of which delivery version they accepted."
+    ],
+    [
+      "Start with one inspectable workflow",
+      "A synthetic document-checking agent reports explicit requirements and missing information. The prototype is deterministic and uses no customer files."
+    ],
+    [
+      "Give an agent delivery a receipt",
+      "Commit the exact source, output and checking policy. Make publication and review history independently inspectable in an EVM registry."
+    ],
+    [
+      "Keep integrity and judgment separate",
+      "Only the designated reviewer can accept or reject. A matching artifact and a reviewer decision answer different questions."
+    ],
+    [
+      "Make changed work visible",
+      "The real local prototype detects an artifact edited after publication. A changed delivery cannot silently reuse its original commitment."
+    ],
+    [
+      "An unchanged artifact still needs review",
+      "Hashes establish integrity, not AI accuracy, eligibility or the identity of a unique person. Reviewers remain responsible for their decisions."
+    ],
+    [
+      "First users and next validation",
+      "Target small teams that need human sign-off on agent-generated operational work. Next: an opt-in pilot around one delivery-and-review workflow."
+    ],
+    [
+      "Why Monad / What remains",
+      "Monad supports a familiar EVM publication and review workflow. Actual Testnet deployment is pending. Source: github.com/JokerFuFu/agentproof-monad"
+    ]
+  ]
+}

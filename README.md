@@ -71,3 +71,7 @@ The release pins viem 2.57.4, removing the earlier runtime-tree WebSocket findin
 ## Public prototype behavior
 
 The hosted page defaults to **Artifact checks**: run, verify, tamper, restore and export without a wallet or a request to local services. To use the disposable Local EVM demo, run the localhost app described above. Monad imports retain their lookup coordinates and select Testnet; an existing registry can be verified with **Connect read-only** without an injected wallet. Publishing, deployment and reviewer decisions still require user-controlled test wallets. Changing the registry disables decisions on the previous receipt until its original registry is reconnected and checked.
+
+## Recorded walkthroughs
+
+[Public Release: local prototype and separate Pitch](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.1-prototype). Each video is 64 seconds and uses edited actual browser captures with subtitles. The walkthrough runs local EVM 31337 and does **not** replace the final required Monad technical demo. [Recording details and limits](docs/submission/recorded-videos.md).

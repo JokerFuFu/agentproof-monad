@@ -14,3 +14,7 @@ Use synthetic input and test-only wallets. Record actual operation on Monad Test
 | 2:40–2:45 | Final receipt | “One delivery, a verifiable history, and an explicit reviewer.” |
 
 Prepare deployment and wallet funding before recording. Do not cut away from transaction success in a way that implies an unconfirmed action completed. Use readable zoom, hide private account labels, and retain unedited confirmation evidence. If wallet approvals take longer, trim explanatory pauses rather than inventing confirmations. Maximum permitted video length is three minutes under the current signup rules.
+
+## Recorded local walkthrough
+
+A separate 64-second actual local EVM walkthrough now covers generation, publication, designated-reviewer acceptance, changed-output detection, restoration and proof export. It is useful prototype evidence, **not** the required final Monad technical demo. The final technical field stays pending until actual Monad deployment and chain acceptance are demonstrated. See `recorded-videos.md` for hosting status.

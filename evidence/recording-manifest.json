@@ -1,0 +1,493 @@
+{
+  "capturedSurface": "Native Chrome localhost AgentProof application",
+  "captureMethod": "Actual screenshot frames sampled at approximately 1 fps; operation gaps edited out",
+  "notContinuousCapture": true,
+  "chainId": 31337,
+  "monadDeployed": false,
+  "noSyntheticVoiceOrLikeness": true,
+  "frames": [
+    {
+      "name": "0000-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:12.347Z",
+      "sha256": "1a7cfc815ec0cb851380ba11413f26fcbcb338ce53df5e3e7671f0d5aaf8d8c5"
+    },
+    {
+      "name": "0001-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:13.339Z",
+      "sha256": "cc5f853eb1320af0567f8e2cc49603f36712beccb28a2d6dd4369c18321e8361"
+    },
+    {
+      "name": "0002-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:14.337Z",
+      "sha256": "5aab49dc30f647fd9927d1630c18bef538534335d05da0e4f9e240535e8688f3"
+    },
+    {
+      "name": "0003-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:15.347Z",
+      "sha256": "7608795d96e858aa711daf2cd2184d7cf7a3c341096f1f6e31374d4a5c5344fb"
+    },
+    {
+      "name": "0004-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:16.337Z",
+      "sha256": "f98d44232fd1234c81b4de8f674c0b3c4234ceae6449920f0eff19af4eb46e13"
+    },
+    {
+      "name": "0005-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:17.353Z",
+      "sha256": "3aec39babdd84036a9b505b787ea84d4c401a22b4e391f1b3c5bc5edd9d05ef9"
+    },
+    {
+      "name": "0006-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:18.349Z",
+      "sha256": "776f5171e6576561dcee5c5cd762dc7ff4f39e6fe652d992709675464a61f0f1"
+    },
+    {
+      "name": "0007-intro.png",
+      "actualEncoding": "JPEG",
+      "stage": "intro",
+      "capturedAt": "2026-10-09T15:23:19.357Z",
+      "sha256": "86a1a1271b480b490c944ab19b7f0e304ce280b2eca35f3046927b82835e573a"
+    },
+    {
+      "name": "0008-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:34.398Z",
+      "sha256": "6928e33b53d091c34a07456f7ad9da02c00bfb222539a088b0d1cd9faff28a4a"
+    },
+    {
+      "name": "0009-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:34.562Z",
+      "sha256": "f098c906e409b67c0e3e0d1c1cb2fa50d48aa5787415a1ca2202178f22a4e500"
+    },
+    {
+      "name": "0010-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:35.577Z",
+      "sha256": "c4969a2b68c15cd4cb4dde78aa6cfcf6c9053e2b00d677267e319219eb375281"
+    },
+    {
+      "name": "0011-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:36.562Z",
+      "sha256": "1f1b4149c9d9512b750e86cefebabec2c09d1574146b53c02198eed1e8624b1a"
+    },
+    {
+      "name": "0012-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:37.562Z",
+      "sha256": "92e5274b59b4d1ba5c2910861c5c8d51cb944c6d5ef43a1907b4b77e047a4539"
+    },
+    {
+      "name": "0013-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:38.569Z",
+      "sha256": "eae2219a94f5e24b1c4f4901dd99ab85736e88e4f8f9c951daa8e37ad4945397"
+    },
+    {
+      "name": "0014-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:39.572Z",
+      "sha256": "5affb1a1c4e5d3cf00bceec784303fb034633930d828c326a16bc9fd27b4e46f"
+    },
+    {
+      "name": "0015-checks.png",
+      "actualEncoding": "JPEG",
+      "stage": "checks",
+      "capturedAt": "2026-10-09T15:23:40.571Z",
+      "sha256": "ccd1810db33e0bc2918840b6398ad08d7a4eb2ba22a187953bc0ae4d268b93a7"
+    },
+    {
+      "name": "0016-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:52.929Z",
+      "sha256": "6f097a0d1f363271cae70f3ded95a065f7e64d7ab8c84618c56b742110494c52"
+    },
+    {
+      "name": "0017-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:53.938Z",
+      "sha256": "70c20e529ef1c34b45445525e999e871e66f91ff51c1d8e5c96978aa25be1267"
+    },
+    {
+      "name": "0018-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:54.938Z",
+      "sha256": "17a95308143de0eb70a99abb66c58082bd5a2f7c242d520a7d54ed90bc3606ee"
+    },
+    {
+      "name": "0019-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:55.940Z",
+      "sha256": "7f9b0252d5df4fb98b8f76be969a3dc3db4fbcbe2dc02ffb8b3de0cae9a8f208"
+    },
+    {
+      "name": "0020-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:56.945Z",
+      "sha256": "6b408f27ffe37bdb19cc68c48b5d7682bf5431b883b18716dc9022df7bcc44a9"
+    },
+    {
+      "name": "0021-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:57.950Z",
+      "sha256": "ad9f197b1cdb99bd3f66f5958f9a12900aece78b588c7ce822481edeac9884bf"
+    },
+    {
+      "name": "0022-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:58.949Z",
+      "sha256": "82eba88728751b6383d8a983830026d22aee435600ec165385dd369b5fd06208"
+    },
+    {
+      "name": "0023-published.png",
+      "actualEncoding": "JPEG",
+      "stage": "published",
+      "capturedAt": "2026-10-09T15:23:59.947Z",
+      "sha256": "d98cb146a221458dbf4df72ec95fef3e5247f2c61e3b2c460885fa409e42b2c2"
+    },
+    {
+      "name": "0024-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:15.433Z",
+      "sha256": "d412d1f41885669f5b3b5d3a1e785268330a841d846e16eab62068f9321d6407"
+    },
+    {
+      "name": "0025-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:15.958Z",
+      "sha256": "1db2b26ad85cf74ef39aa4408e457f0665ac683e8c723cf83f3b9757b522408c"
+    },
+    {
+      "name": "0026-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:16.854Z",
+      "sha256": "badc26d1fb2c8f50ac51bbc9231ed8808e9258d53ddfbd942786748df240e58b"
+    },
+    {
+      "name": "0027-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:17.857Z",
+      "sha256": "9eab36608cad6bdf27645919f0980dcf312c96f65618770f93d498d6e478a535"
+    },
+    {
+      "name": "0028-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:18.857Z",
+      "sha256": "9b0395b288aa91b2e212f81fe2ff54b0af5c591b3a4f09ea9dec0775e48b246c"
+    },
+    {
+      "name": "0029-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:19.854Z",
+      "sha256": "17f3d7784497c1d1a2cabe0aeafc16d194ab3f56e827e922685d09a3982601d0"
+    },
+    {
+      "name": "0030-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:20.847Z",
+      "sha256": "44ae2c63d5c1d5c7374a8dacdc7317a493d9b7ccf5dbe439bd12385b933825b8"
+    },
+    {
+      "name": "0031-accepted.png",
+      "actualEncoding": "JPEG",
+      "stage": "accepted",
+      "capturedAt": "2026-10-09T15:24:21.867Z",
+      "sha256": "c9b507ef3f87482ac72126a5679f093333610d1cd90ddf54b6493e19cc97dc96"
+    },
+    {
+      "name": "0032-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:32.006Z",
+      "sha256": "467744fb513469390b118799ab46651c0713b04d6ad41932481d6615dfb25991"
+    },
+    {
+      "name": "0033-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:33.015Z",
+      "sha256": "fb35332a063ef07e92ccfef9035589f2ac03b842f2e2c9a7f69b0b98028c4439"
+    },
+    {
+      "name": "0034-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:34.016Z",
+      "sha256": "b944c72b5053d3978886e9cf484e252f593fa4fdc5d3a8fd205e81c216ebb756"
+    },
+    {
+      "name": "0035-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:35.015Z",
+      "sha256": "f8b9c9f33ad96f82e2970a073ae16a9bb6e3f6e18d56cd1c5f1ed784e088f932"
+    },
+    {
+      "name": "0036-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:36.013Z",
+      "sha256": "741b0b041d433f6589122abfa64d4571cf79a6134791f3be8f03729446387679"
+    },
+    {
+      "name": "0037-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:37.012Z",
+      "sha256": "7657f912dca414a193e3073801423f29d95dc00c2e12d426043d1b5770d76136"
+    },
+    {
+      "name": "0038-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:38.012Z",
+      "sha256": "2922330b9a411e0e40f0617e31737cf63bd3fb47cc2138bfaea6148a171c21e9"
+    },
+    {
+      "name": "0039-tampered.png",
+      "actualEncoding": "JPEG",
+      "stage": "tampered",
+      "capturedAt": "2026-10-09T15:24:39.005Z",
+      "sha256": "57d1a6718f027aca9febbe65265f6342ae13207f8b7586195a400424d1ab2743"
+    },
+    {
+      "name": "0040-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:47.987Z",
+      "sha256": "7cf12529a58d1021121b656eecbe70b1c3780cab2280d0c4f40150e70f203de9"
+    },
+    {
+      "name": "0041-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:48.988Z",
+      "sha256": "a66cad8b4ee89cfe5a8bf9bf4a1ff4080c92f0e7bdddf74fe146a8479f3eb5f9"
+    },
+    {
+      "name": "0042-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:49.981Z",
+      "sha256": "8aba4ffc0165da97a8baee0d768182ce222fea096a1adaa6892b2ccace039423"
+    },
+    {
+      "name": "0043-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:51.000Z",
+      "sha256": "31dd70a65ba760c709f0ffa5f0bcf16e936f82dad46537cc6ac07220ac00dc30"
+    },
+    {
+      "name": "0044-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:51.988Z",
+      "sha256": "1d9c31cee412e9dedfc60af27a2e1bb790f6a4c300e139718f098f7368b305c1"
+    },
+    {
+      "name": "0045-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:52.987Z",
+      "sha256": "4876de05aed6a1c1dae211ca517736eac0da8e2a1d3401c699dd15c293b1d8e0"
+    },
+    {
+      "name": "0046-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:53.988Z",
+      "sha256": "ad01670e65d1b3e1f7a90f45e0be8cf0a9458f49de5460f7542a7193502ce570"
+    },
+    {
+      "name": "0047-restored.png",
+      "actualEncoding": "JPEG",
+      "stage": "restored",
+      "capturedAt": "2026-10-09T15:24:54.997Z",
+      "sha256": "bf8dd692103db5be10900438934342b00d77281207496808e4185a66aa0d2b48"
+    },
+    {
+      "name": "0048-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:15.089Z",
+      "sha256": "00c7a63a2b8ffad29160f10be5b9abe02a21d2993e9fd9cbe21d49c60a89ac87"
+    },
+    {
+      "name": "0049-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:16.099Z",
+      "sha256": "e6261e9dede514521765d58b17edd00ffe477cf525eb62ed2dfb51ddcb86642d"
+    },
+    {
+      "name": "0050-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:17.097Z",
+      "sha256": "a6dd505b979baacc97802bb29a644afcaa594935e04fc6a15d5c4034803deeeb"
+    },
+    {
+      "name": "0051-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:18.097Z",
+      "sha256": "bfbdeed495ad511597c91e331672236770e22570db5374b63ebebb8ff0892c72"
+    },
+    {
+      "name": "0052-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:19.095Z",
+      "sha256": "f06a64c7e0d73053b6fdec22e08f98f2e673b891c057e2bbea38124035944947"
+    },
+    {
+      "name": "0053-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:20.104Z",
+      "sha256": "7f1c6fb6ac7a3b80886155cb55f8e73ed91652d0293bdc90295ff5aab7a6472d"
+    },
+    {
+      "name": "0054-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:21.098Z",
+      "sha256": "b9785d7ac8d0d394ed3268bfee7097976b76c680efa66c384467589d9255c4d0"
+    },
+    {
+      "name": "0055-exported.png",
+      "actualEncoding": "JPEG",
+      "stage": "exported",
+      "capturedAt": "2026-10-09T15:25:22.113Z",
+      "sha256": "2418540641dc8e819049439a4ea97f0c095668db2eeae670d554752eadd99b56"
+    },
+    {
+      "name": "0056-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:31.605Z",
+      "sha256": "58512e64f83c67dab12250b3030ed932708e0bb2e15de25c5285e0a2a2d1e876"
+    },
+    {
+      "name": "0057-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:32.605Z",
+      "sha256": "9c3beb04a45f6ff1b0585557b8d2e36f1d957cfb009f9d8454c0cdc185be3ac1"
+    },
+    {
+      "name": "0058-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:33.603Z",
+      "sha256": "034c01106c060f85e44647dfc82acb48688ddaf9f4b9f639eeea470169f005d4"
+    },
+    {
+      "name": "0059-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:34.604Z",
+      "sha256": "dbcec0c7edf2fced903a241e2f2ba1be2b98b8455924b8bc1c66d6881298044d"
+    },
+    {
+      "name": "0060-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:35.619Z",
+      "sha256": "4461e78774131b57277367230b436d6a9aae6e32e09136b65a8e3a92db71b0b2"
+    },
+    {
+      "name": "0061-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:36.605Z",
+      "sha256": "5dceef5a5c95c5f9a1cd2e51811e7a046f005a6f1a76bf07c2af7d26b0be35fe"
+    },
+    {
+      "name": "0062-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:37.607Z",
+      "sha256": "49b0dcd01c964a6d304453a05ac036d2a92d14fb37cca9fc29e4a29c16ffb435"
+    },
+    {
+      "name": "0063-outro.png",
+      "actualEncoding": "JPEG",
+      "stage": "outro",
+      "capturedAt": "2026-10-09T15:25:38.614Z",
+      "sha256": "c5b801e52baf5ecd6720ca368de0d2c9e2e230f45e48cda4aa681ebcb8330722"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "agentproof-prototype.mp4",
+      "bytes": 1163349,
+      "sha256": "9b0b757e3fdaaeb69cb50dc8f37c80230a606e1014067246881de96fb69d4820",
+      "durationSeconds": 64.0,
+      "resolution": "1920x1440",
+      "sourceFramesPerSecond": 1,
+      "encodedFramesPerSecond": 25
+    },
+    {
+      "file": "agentproof-pitch.mp4",
+      "bytes": 1190601,
+      "sha256": "e4ca862ab21e85a8f13d0232c95c35c0b5865fb5cdee394bc52f97060be51589",
+      "durationSeconds": 64.0,
+      "resolution": "1920x1440",
+      "sourceFramesPerSecond": 1,
+      "encodedFramesPerSecond": 25
+    },
+    {
+      "file": "agentproof-pitch-compact.mp4",
+      "bytes": 524921,
+      "sha256": "66fa8d035e7aaf401faa1a21d7019d4d56f5e205aecb3323203e7f6547428e56",
+      "durationSeconds": 64.0,
+      "resolution": "1280x960",
+      "sourceFramesPerSecond": 1,
+      "encodedFramesPerSecond": 1,
+      "variantOf": "agentproof-pitch.mp4"
+    }
+  ],
+  "publicRelease": "https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.1-prototype",
+  "publicAssets": [
+    "https://github.com/JokerFuFu/agentproof-monad/releases/download/v0.1.1-prototype/agentproof-prototype.mp4",
+    "https://github.com/JokerFuFu/agentproof-monad/releases/download/v0.1.1-prototype/agentproof-pitch-compact.mp4"
+  ]
+}
