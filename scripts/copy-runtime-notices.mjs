@@ -14,4 +14,5 @@ for(const path of paths){
 }
 mkdirSync('public',{recursive:true});
 writeFileSync('public/THIRD-PARTY-NOTICES.txt',notices.join('\n').trimEnd()+'\n');
+writeFileSync('public/LICENSE.txt',readFileSync('LICENSE','utf8'));
 console.log(`Preserved runtime license texts for ${paths.length} installed dependency distributions`);
