@@ -1,5 +1,7 @@
 # Pitch video — target 1 minute 40 seconds
 
+The current [separate public Pitch](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-pitch.mp4) is **63.88 seconds**, using actual Monad read-only browser recordings with subtitles. It names JokerFuFu in third person and states the problem, receipt workflow, actual Monad verification, limits and planned opt-in pilot. No voice or likeness is synthesized. See [recorded-videos.md](recorded-videos.md). The narration below is an optional future entrant-spoken alternative.
+
 This is a separate required video from the three-minute working technical demo. Record only true current behavior. Do not insert a simulated Monad transaction or claim existing users, revenue or partnerships. Speaker identity is JokerFuFu; voice/likeness use requires the user's own participation or specific approval.
 
 ## 0:00–0:20 — team and problem
@@ -24,4 +26,4 @@ End with the real product URL and repository URL after publication. Leave a few 
 
 ## Recorded subtitle-only alternative
 
-An actual 64-second project Pitch now uses real local-prototype screen captures and explanatory subtitles. It names JokerFuFu as the solo builder in third person, without synthesizing the entrant's voice or likeness. The exact captions are in `video-captions.json` and the capture/output hash record is `evidence/recording-manifest.json`. Every segment discloses local EVM and pending Monad deployment. See `recorded-videos.md` for confirmed public-hosting status.
+The earlier 64-second Pitch used local-prototype screen captures, labeled local EVM and pending Monad deployment. Its captions and hashes remain in `video-captions.json` and `evidence/recording-manifest.json` as historical evidence. The current Monad Pitch above supersedes that recording for the submission packet.

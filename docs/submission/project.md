@@ -9,7 +9,8 @@
 - **Live product:** [GitHub Pages](https://jokerfufu.github.io/agentproof-monad/) — imports and verifies an actual accepted Monad Testnet receipt without a wallet; new writes use entrant-controlled test accounts.
 - **Monad deployment:** Chain 10143, registry [0x8c671ffbc6d61b6372acba06a93b92ce8bed9196](https://testnet.monadvision.com/address/0x8c671ffbc6d61b6372acba06a93b92ce8bed9196), deployed 10 October 2026.
 - **Demonstration evidence:** [Synthetic portable proof package](../../public/agentproof-monad-proof.json), [confirmed publication](https://testnet.monadvision.com/tx/0x2109b441c85d10f381814efc07236f6992a6e77442f2c9f550a04fd1af4d3fa4) and [reviewer acceptance](https://testnet.monadvision.com/tx/0xc6220d62b2c012a0716b296c5eff90bc51ad8f4dcf811042b9d135b89c8858b5).
-- **Technical / Pitch videos:** The historical local recordings are public; updated real Monad walkthroughs are being prepared. Final contest submission remains pending.
+- **Technical video:** [Actual Monad verification walkthrough](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-demo.mp4), 63.88 seconds.
+- **Pitch video:** [Separate subtitle-only Pitch](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-pitch.mp4), 63.88 seconds. Both are also in the [public Monad Release](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad). Final contest submission remains pending.
 
 ## Short description
 
@@ -31,7 +32,7 @@ An agent workflow can produce many small delivery and review receipts. Monad pro
 
 ## Limits and next steps
 
-The included checking agent is deterministic, not an LLM. A commitment proves an unchanged artifact, not accurate reasoning or successful AI execution. A designated reviewer supplies an opinion, and distinct wallet addresses do not prove distinct people. The prototype has no payments, reputation scoring or production security audit. Public source, static hosting and actual Monad Testnet acceptance are complete. The remaining submission work is updated technical/Pitch recordings, saved final project fields and entrant-reviewed declarations.
+The included checking agent is deterministic, not an LLM. A commitment proves an unchanged artifact, not accurate reasoning or successful AI execution. A designated reviewer supplies an opinion, and distinct wallet addresses do not prove distinct people. The prototype has no payments, reputation scoring or production security audit. Public source, static hosting, actual Monad Testnet acceptance and both public videos are complete. The remaining submission work is saving the latest project fields and reviewing the final declarations with the entrant.
 
 ## Ownership, AI and attribution disclosure
 

@@ -15,6 +15,16 @@ The exported 2,586-byte synthetic package was independently verified at **2026-1
 
 Registry `0x8c671ffbc6d61b6372acba06a93b92ce8bed9196`; receipt `0x682921d6503d90af908f1c6de086b0b5f3f91a6d7caf8cf4a2556ad79a675e94`. The two accounts belong to the entrant; distinct addresses do not establish distinct people. The pending-review deadline was 11 October 02:30:36 UTC; the recorded acceptance remains inspectable after that deadline. Live revocation can still invalidate a receipt. Final contest submission remains pending.
 
+## Current build, public replay and recording — 10 October 2026
+
+Fresh checks after adding the Monad CLI verifier and updating the header: **21/21 tests passed**, no failures (1,206.59 ms). solc 0.8.30 compiled the Osaka and Shanghai deployment artifacts, each 2,850 bytes; Vite 7.3.7 built successfully (601 ms). `npm run verify:monad` independently verified the exported package against the live contract, reconstructed Accepted state, detected tampering and passed after restoration. No contract behavior changed.
+
+Source commit `14d08416456042fc542641e80a00d0a8f956ed13` and static site commit `6a58815a3fb98e0788d1dc4bf2087f48078a3472` were pushed. All eight public site assets returned HTTP 200 and matched the local production build. An actual separate browser without a wallet imported the synthetic package as unverified, connected read-only, verified Accepted, detected tampering, restored, exported a real downloaded file, then reimported and independently verified Accepted again.
+
+Two separate subtitle-only videos of that actual Monad replay were published in [Release v0.1.2-monad](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad). Both are 63.88-second H.264 MP4s at 1440×1040. Anonymous downloads match their local SHA-256 values. They are also served as `video/mp4` on Pages, site commit `61ead4e500065db4a88c235f8a01037bfcc62f9b`, with HTTP 200 and matching hashes. [Recording manifest](../../evidence/monad-recording-manifest.json), [recording details](recorded-videos.md). Signing happened before recording; the footage demonstrates actual read-only replay. A separate explorer-page navigation timed out and is omitted, while official RPC verification succeeded.
+
+The original authenticated contest session still shows the dashboard at **4/5 onboarding steps** and the correct 14 October 11:59 GMT+8 deadline. The project submission page remained at Loading after refresh, with no editable fields rendered. Saving the new live-product/video links and updated project text is not confirmed. Final contest submission and action-time declaration review remain pending.
+
 The following sections retain the historical local-development record. Their pending-Monad statements describe those earlier checkpoints; the actual Testnet acceptance above supersedes them.
 
 9 October 2026. This record distinguishes real local execution from external deployment.

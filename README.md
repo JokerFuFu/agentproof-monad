@@ -91,4 +91,10 @@ The hosted page defaults to **Artifact checks**: run, verify, tamper, restore an
 
 ## Recorded walkthroughs
 
-[Public Release: local prototype and separate Pitch](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.1-prototype). Each video is 64 seconds and uses edited actual browser captures with subtitles. The walkthrough runs local EVM 31337 and does **not** replace the final required Monad technical demo. [Recording details and limits](docs/submission/recorded-videos.md).
+[Current Monad Release: technical demo and separate Pitch](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad). Both videos are **63.88 seconds**, with subtitles over actual browser recordings of the public app querying Monad Testnet. They show imported/unverified status, live Accepted verification, chain evidence, tamper detection, restoration, export and fresh import/reverification. Wallet transactions were completed by the entrant before this read-only recording.
+
+- [Technical demo](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-demo.mp4)
+- [Separate Pitch](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-pitch.mp4)
+- [Recording details and limits](docs/submission/recorded-videos.md)
+
+The [earlier local prototype Release](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.1-prototype) remains a historical development record on local chain 31337. Final contest submission remains pending.

@@ -1,0 +1,196 @@
+{
+  "source": "Actual Playwright browser recording of the public app using live official Monad RPC; no wallet emulation or transaction replay",
+  "rawFileName": "page@df65aa3fe93d6b05cb31fed19113bc70.webm",
+  "rawSha256": "ee8509529e57bb81a51fc487f5b99e0ec6050f0c02ac89e17d3d20cf71e00990",
+  "rawDurationSeconds": 140,
+  "segments": [
+    {
+      "label": "intro",
+      "start": 5.733,
+      "end": 9.75
+    },
+    {
+      "label": "local-generation",
+      "start": 9.831,
+      "end": 13.8
+    },
+    {
+      "label": "import-unverified",
+      "start": 13.897,
+      "end": 23
+    },
+    {
+      "label": "live-accepted",
+      "start": 23.039,
+      "end": 33.039
+    },
+    {
+      "label": "chain-evidence",
+      "start": 56.371,
+      "end": 62.65
+    },
+    {
+      "label": "tamper-detected",
+      "start": 62.728,
+      "end": 70.05
+    },
+    {
+      "label": "restored-accepted",
+      "start": 70.083,
+      "end": 75.2
+    },
+    {
+      "label": "exported",
+      "start": 75.239,
+      "end": 83.4
+    },
+    {
+      "label": "reimport-verified",
+      "start": 83.431,
+      "end": 93.431
+    }
+  ],
+  "editing": "Trim startup, idle pauses and the failed explorer navigation; add explanatory subtitles below the original viewport. No fabricated confirmations.",
+  "explorerNavigation": "Timed out; recorded app displays its genuine publication explorer link. Transactions verified separately through official RPC.",
+  "outputs": [
+    {
+      "fileName": "agentproof-monad-demo.mp4",
+      "sha256": "74e1311476dfbe515caca40171213815078b9b2fb0a6582240cbbe7d08e4793c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1040,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "63.880000",
+          "size": "1244744"
+        }
+      }
+    },
+    {
+      "fileName": "agentproof-monad-pitch.mp4",
+      "sha256": "19a67ce0996623b420f6bb16b2e1dd4c88c33c6dbcd3c9a04d4ec14990c390c9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1040,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "63.880000",
+          "size": "1250832"
+        }
+      }
+    }
+  ],
+  "captions": {
+    "monad-demo": [
+      [
+        "AgentProof / real Monad Testnet receipt",
+        "Read-only replay. Entrant-controlled publication and review transactions were confirmed before this recording."
+      ],
+      [
+        "1 / Generate a synthetic delivery",
+        "Deterministic checklist; no LLM. This newly generated local output is not yet published."
+      ],
+      [
+        "2 / Import the actual published package",
+        "Imported status starts unverified. The package contains synthetic source, output, policy and salt."
+      ],
+      [
+        "3 / Verify against live Monad state",
+        "Read-only RPC checks runtime bytecode, publication, identities and commitments. Review: Accepted."
+      ],
+      [
+        "4 / Inspect confirmed chain evidence",
+        "Real chain 10143 coordinates and publication explorer link. Two wallet addresses do not prove two people."
+      ],
+      [
+        "5 / Detect a changed delivery",
+        "Editing the artifact returns Output commitment mismatch. A hash match does not prove AI accuracy."
+      ],
+      [
+        "6 / Restore the exact delivery",
+        "Live verification matches the original artifact again. The reviewer decision remains Accepted."
+      ],
+      [
+        "7 / Export portable proof",
+        "The browser saves a real JSON package. Anyone given the package can read its included text artifacts."
+      ],
+      [
+        "8 / Re-import and independently verify",
+        "Imported hints become trusted only after another live check. Public MIT source: github.com/JokerFuFu/agentproof-monad"
+      ]
+    ],
+    "monad-pitch": [
+      [
+        "AgentProof / solo builder: JokerFuFu",
+        "AI product and engineering lead building verifiable agent workflows. Original work started 9 October 2026."
+      ],
+      [
+        "The problem: which version was accepted?",
+        "Agent outputs move between people and tools. Reviewers need an inspectable delivery history."
+      ],
+      [
+        "Give each delivery a portable receipt",
+        "Commit source, output and policy. Keep raw documents off chain; share them deliberately in the proof package."
+      ],
+      [
+        "A working prototype on Monad Testnet",
+        "This real delivery was published and accepted by a designated reviewer. Integrity and judgment stay separate."
+      ],
+      [
+        "Why Monad",
+        "Public EVM receipts support independent verification with familiar tools. No throughput or cost benchmark is claimed."
+      ],
+      [
+        "Make changed work visible",
+        "A modified artifact fails verification. Hashes establish integrity, not factual accuracy or correct AI execution."
+      ],
+      [
+        "Preserve an explicit reviewer decision",
+        "Restoring the original delivery verifies again. Review acceptance is an opinion recorded by a designated account."
+      ],
+      [
+        "Start with one review workflow",
+        "Target small teams reviewing agent-generated research and operations. Plan an opt-in pilot; no customers or revenue claimed."
+      ],
+      [
+        "Try it without a wallet",
+        "Import the synthetic proof and connect read-only. Product: jokerfufu.github.io/agentproof-monad/ | Public MIT source on GitHub."
+      ]
+    ]
+  },
+  "recordedOn": "2026-10-10",
+  "productUrl": "https://jokerfufu.github.io/agentproof-monad/",
+  "sourceCommit": "14d08416456042fc542641e80a00d0a8f956ed13",
+  "pagesCommitDuringRecording": "6a58815a3fb98e0788d1dc4bf2087f48078a3472",
+  "releaseUrl": "https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad",
+  "publicAssets": [
+    {
+      "name": "agentproof-monad-demo.mp4",
+      "url": "https://github.com/JokerFuFu/agentproof-monad/releases/download/v0.1.2-monad/agentproof-monad-demo.mp4",
+      "status": 200,
+      "sha256": "74e1311476dfbe515caca40171213815078b9b2fb0a6582240cbbe7d08e4793c",
+      "matchesLocal": true
+    },
+    {
+      "name": "agentproof-monad-pitch.mp4",
+      "url": "https://github.com/JokerFuFu/agentproof-monad/releases/download/v0.1.2-monad/agentproof-monad-pitch.mp4",
+      "status": 200,
+      "sha256": "19a67ce0996623b420f6bb16b2e1dd4c88c33c6dbcd3c9a04d4ec14990c390c9",
+      "matchesLocal": true
+    }
+  ]
+}

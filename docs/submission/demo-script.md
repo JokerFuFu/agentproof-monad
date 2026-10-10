@@ -1,4 +1,8 @@
-# Demo script — target 2:45, public video pending
+# Technical demonstration and optional signing script
+
+The current [public technical video](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-demo.mp4) is **63.88 seconds**. It records actual wallet-free replay of the accepted Monad receipt: generation, unverified import, official-RPC verification, chain evidence, tamper detection, restored acceptance, export and fresh import/reverification. The entrant's deployment, publication and review transactions happened before recording; the video does not show new signatures. See [recorded-videos.md](recorded-videos.md) for hashes, editing details and the public Release.
+
+The following 2:45 script is an optional future recording with user-controlled signatures, not a description of the published video.
 
 Use synthetic input and test-only wallets. Record actual operation on Monad Testnet after successful deployment. Show a readable chain label and at least one explorer transaction. Do not present a local EVM recording as Monad integration.
 
@@ -17,4 +21,4 @@ Prepare deployment and wallet funding before recording. Do not cut away from tra
 
 ## Recorded local walkthrough
 
-A separate 64-second actual local EVM walkthrough now covers generation, publication, designated-reviewer acceptance, changed-output detection, restoration and proof export. It is useful prototype evidence, **not** the required final Monad technical demo. The final technical field stays pending until actual Monad deployment and chain acceptance are demonstrated. See `recorded-videos.md` for hosting status.
+A historical 64-second local EVM walkthrough covers generation, publication, designated-reviewer acceptance, changed-output detection, restoration and proof export. It records the earlier local prototype. The current Monad video and chain evidence above supersede the earlier pending-Testnet checkpoint. Saving the latest video link in the contest form and final submission remain pending.
