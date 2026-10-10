@@ -1,4 +1,21 @@
-# Validation evidence — local prototype
+# Validation evidence — Monad Testnet and local prototype
+
+## Actual Monad acceptance — 10 October 2026
+
+The entrant created two test accounts and personally approved deployment, agent registration, publication and reviewer acceptance on **Monad Testnet, chain 10143**. No assistant-held key or simulated wallet was used for these transactions.
+
+The exported 2,586-byte synthetic package was independently verified at **2026-10-10T02:37:48.966Z** using the official RPC. The expected 2,822-byte Osaka runtime matched exactly; successful publication/event, derived receipt ID, publisher ownership, designated reviewer and all three artifact commitments matched the live contract. The current receipt state was **Accepted**. Changing the output failed verification; restoring the original passed. [Public acceptance record](../../evidence/monad-acceptance.json), [portable synthetic package](../../public/agentproof-monad-proof.json).
+
+| Action | Successful transaction | Block |
+|---|---|---|
+| Deploy registry | [0x9c01d794…73d971f](https://testnet.monadvision.com/tx/0x9c01d79423a2fc2b0e0b218f41e93739fd1baa6fa8f82a70ad0b7fb4f73d971f) | 69703477 |
+| Register agent | [0x584b783a…41fe15f](https://testnet.monadvision.com/tx/0x584b783ac98866925a0f8bdf6aabde1805029883d71016446d4817e3c41fe15f) | 69706503 |
+| Publish receipt | [0x2109b441…f4d3fa4](https://testnet.monadvision.com/tx/0x2109b441c85d10f381814efc07236f6992a6e77442f2c9f550a04fd1af4d3fa4) | 69706546 |
+| Reviewer accepts | [0xc6220d62…8858b5](https://testnet.monadvision.com/tx/0xc6220d62b2c012a0716b296c5eff90bc51ad8f4dcf811042b9d135b89c8858b5) | 69707407 |
+
+Registry `0x8c671ffbc6d61b6372acba06a93b92ce8bed9196`; receipt `0x682921d6503d90af908f1c6de086b0b5f3f91a6d7caf8cf4a2556ad79a675e94`. The two accounts belong to the entrant; distinct addresses do not establish distinct people. The pending-review deadline was 11 October 02:30:36 UTC; the recorded acceptance remains inspectable after that deadline. Live revocation can still invalidate a receipt. Final contest submission remains pending.
+
+The following sections retain the historical local-development record. Their pending-Monad statements describe those earlier checkpoints; the actual Testnet acceptance above supersedes them.
 
 9 October 2026. This record distinguishes real local execution from external deployment.
 

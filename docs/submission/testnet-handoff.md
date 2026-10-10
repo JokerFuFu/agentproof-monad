@@ -1,6 +1,8 @@
 # Monad Testnet demonstration handoff
 
-This is a ready-to-run browser path. It has **not** yet been executed on Monad. The user controls the wallet and signs each transaction; the assistant never needs a seed phrase or private key.
+This browser path was executed on **Monad Testnet, chain 10143, on 10 October 2026**. The user controlled deployment, publication and reviewer signatures. The exported synthetic package independently verified against the live contract with Accepted state; see [acceptance evidence](../../evidence/monad-acceptance.json). The assistant never needs a seed phrase or private key.
+
+To replay without a wallet, download [the confirmed proof package](../../public/agentproof-monad-proof.json), import it in the public app, choose **Connect read-only** and **Verify against receipt**. Imported status starts unverified; the chain supplies the current review result.
 
 ## Prepare
 
@@ -18,7 +20,7 @@ This is a ready-to-run browser path. It has **not** yet been executed on Monad. 
 | Publish receipt | Approve agent registration, then receipt publication | Successful registration and publication; receipt ID and transaction |
 | Verify | Compare unchanged artifact with live receipt | Pending review, verified commitments |
 | Tamper / restore | Try a tampered delivery, verify, then restore | Mismatch, then unchanged artifact verifies |
-| Review | Switch to designated review wallet, then Accept as reviewer | Successful review transaction and live Accepted status |
+| Review | Switch to designated reviewer and allow the site to access that account, then Accept as reviewer | Successful review transaction and live Accepted status |
 | Export / import | Save the package, import through file chooser, connect and re-verify | Imported state initially unverified; live check reconstructs Accepted |
 | Optional revocation | Switch back to publisher, approve Revoke | Live verification invalid; original commitments retained |
 

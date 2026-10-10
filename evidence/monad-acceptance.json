@@ -1,0 +1,52 @@
+{
+  "verifiedAt": "2026-10-10T02:37:48.966Z",
+  "network": "Monad Testnet",
+  "chainId": 10143,
+  "rpc": "https://testnet-rpc.monad.xyz",
+  "registry": "0x8c671ffbc6d61b6372acba06a93b92ce8bed9196",
+  "runtimeBytes": 2822,
+  "runtimeHash": "0xcc11c31cf7c829d28ffd9f1b30d44537178b6f1c1000e7cbcc3aab20955e723a",
+  "runtimeMatchesProject": true,
+  "deployment": {
+    "transactionHash": "0x9c01d79423a2fc2b0e0b218f41e93739fd1baa6fa8f82a70ad0b7fb4f73d971f",
+    "blockNumber": 69703477,
+    "status": "0x1",
+    "contractAddress": "0x8c671ffbc6d61b6372acba06a93b92ce8bed9196",
+    "from": "0x58d42eae7f4511e7ff1f955bea8bfcadc6b9919f"
+  },
+  "publication": {
+    "transactionHash": "0x2109b441c85d10f381814efc07236f6992a6e77442f2c9f550a04fd1af4d3fa4",
+    "blockNumber": "69706546",
+    "receiptId": "0x682921d6503d90af908f1c6de086b0b5f3f91a6d7caf8cf4a2556ad79a675e94",
+    "agentId": "0xbb8e441ed4a7bf4389fd40631ccb0dd14582eb4b95ce9b617e461fcb65d1e335"
+  },
+  "review": {
+    "transactionHash": "0xc6220d62b2c012a0716b296c5eff90bc51ad8f4dcf811042b9d135b89c8858b5",
+    "blockNumber": 69707407,
+    "transactionStatus": "0x1",
+    "decision": "Accepted",
+    "evidenceHash": "0xf4ff36e8e7cc48757a93f800c6b7a9897a6d50f31a64eb7ef2dba96834dd1777"
+  },
+  "publisher": "0x58d42eae7f4511E7Ff1F955Bea8BfCaDC6b9919F",
+  "reviewer": "0x6f6B6705E56c0a669614b728C5CbF522AE310345",
+  "reviewDeadline": "2026-10-11T02:30:36.000Z",
+  "checks": {
+    "artifactCommitments": true,
+    "expectedRuntime": true,
+    "publicationReceiptAndEvent": true,
+    "reconstructedReceiptIdentities": true,
+    "currentAcceptedState": true,
+    "changedOutputRejected": true,
+    "restoredOutputVerified": true
+  },
+  "portablePackage": "public/agentproof-monad-proof.json",
+  "portablePackageSha256": "75c30557c5353a676aec62d7380fe60ad802985890dbce6b51a691b0d028e628",
+  "syntheticDataOnly": true,
+  "signatures": "Entrant-controlled MetaMask test accounts; no assistant signing",
+  "finalSubmission": false,
+  "registration": {
+    "transactionHash": "0x584b783ac98866925a0f8bdf6aabde1805029883d71016446d4817e3c41fe15f",
+    "blockNumber": 69706503,
+    "agentId": "0xbb8e441ed4a7bf4389fd40631ccb0dd14582eb4b95ce9b617e461fcb65d1e335"
+  }
+}

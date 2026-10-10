@@ -44,7 +44,24 @@ Read-only connectivity check:
 npm run check:monad
 ```
 
-This writes `evidence/monad-rpc.json`. A successful RPC check is **not deployment evidence**. No AgentProof contract has yet been deployed on Monad. To deploy, the user must use a test-only injected wallet, select chain 10143, connect, approve the deployment and agent-registration/publication transactions, then switch to the designated review wallet. Every external write checks the actual account and network before simulation and signing. The app never requests a private key. Use only test MON from the [official faucet](https://faucet.monad.xyz/); no real funds are required by this demo.
+This writes `evidence/monad-rpc.json`. A successful RPC check alone is **not deployment evidence**. On **10 October 2026**, the entrant used two test accounts to deploy the registry, publish a delivery and record reviewer acceptance on Monad Testnet. The exported package was independently checked against the official RPC: exact runtime bytecode, successful publication transaction/event, reconstructed identities and live **Accepted** status all matched. [Confirmed coordinates and verification record](evidence/monad-acceptance.json).
+
+Anyone can reproduce this result without a wallet:
+
+1. Download the [synthetic Monad proof package](public/agentproof-monad-proof.json).
+2. Open the [public app](https://jokerfufu.github.io/agentproof-monad/) and choose **Import proof package**. Imported status starts unverified.
+3. Choose **Connect read-only**, then **Verify against receipt**. The app queries Monad Testnet and reconstructs the current review state.
+4. Try a tampered delivery, verify the mismatch, restore the original and verify again. Export the portable package if needed.
+
+Command-line verification:
+
+```sh
+npm run verify:monad
+```
+
+Registry: [0x8c671ffbc6d61b6372acba06a93b92ce8bed9196](https://testnet.monadvision.com/address/0x8c671ffbc6d61b6372acba06a93b92ce8bed9196). [Publication transaction](https://testnet.monadvision.com/tx/0x2109b441c85d10f381814efc07236f6992a6e77442f2c9f550a04fd1af4d3fa4). [Reviewer transaction](https://testnet.monadvision.com/tx/0xc6220d62b2c012a0716b296c5eff90bc51ad8f4dcf811042b9d135b89c8858b5). These are real chain **10143** coordinates. The review deadline limits when a pending decision may be made; an accepted decision remains recorded unless the publisher revokes it. A cached file is never a substitute for current live verification.
+
+To publish a new receipt, use a test-only injected wallet, select chain 10143, connect and approve the agent-registration/publication transactions, then switch to a different designated reviewer account and permit the site to access that account. Every external write checks the actual account and network before simulation and signing. The app never requests a private key. Use only test MON from the [official faucet](https://faucet.monad.xyz/); no real funds are required by this demo.
 
 The deployment button prepares network/address/transaction evidence for download and displays a copyable backup after two confirmations. The proof package includes the publication transaction. Verify these live and retain the explorer links before claiming Monad integration in a submission. The public static prototype can run the synthetic checking and artifact-integrity flow. Publication on a local EVM requires the loopback service on the viewer's machine; the static site does not host a shared local chain.
 
@@ -64,7 +81,7 @@ The deployment button prepares network/address/transaction evidence for download
 
 Original code was created for this entry with **OpenAI Codex** assistance, including design, implementation, tests and review. Dependencies: [viem](https://github.com/wevm/viem) (MIT), [Vite](https://github.com/vitejs/vite) (MIT), [solc-js](https://github.com/ethereum/solc-js) (MIT, compiler components under their upstream licenses), and [Ganache](https://github.com/trufflesuite/ganache) (MIT). The build preserves the installed runtime tree's upstream license texts in [THIRD-PARTY-NOTICES.txt](public/THIRD-PARTY-NOTICES.txt), also copied into the static site. Development-tool notices remain in their npm distributions. No Portaldot/BidUltra code, proprietary customer documents or secrets were reused.
 
-The owner approved public source release, **MIT** licensing, free GitHub Pages hosting and later public video uploads on 9 October 2026. Original code and materials are covered by [LICENSE](LICENSE); third-party components retain their upstream terms. The public repository is [JokerFuFu/agentproof-monad](https://github.com/JokerFuFu/agentproof-monad); the static prototype is live on [GitHub Pages](https://jokerfufu.github.io/agentproof-monad/). Its generation, integrity, tamper and restore flow was verified in a real browser. **No Monad deployment, submitted video or final contest entry exists yet.** The owner has no test wallet and requested retaining the prototype for now. Do not describe this prototype as submitted or production-ready.
+The owner approved public source release, **MIT** licensing, free GitHub Pages hosting and later public video uploads on 9 October 2026. Original code and materials are covered by [LICENSE](LICENSE); third-party components retain their upstream terms. The public repository is [JokerFuFu/agentproof-monad](https://github.com/JokerFuFu/agentproof-monad); the Monad Testnet prototype is live on [GitHub Pages](https://jokerfufu.github.io/agentproof-monad/). The entrant completed user-controlled deployment, publication and reviewer transactions on 10 October; the exported synthetic package independently verifies against the actual Monad contract. **The final contest entry has not been submitted.** This remains a prototype.
 
 The release pins viem 2.57.4, removing the earlier runtime-tree WebSocket findings. The 13 installed production dependency distributions have no findings in the recorded audit intersection. npm also reports advisories in Ganache's bundled development tree, including critical findings; Ganache is used only for isolated, disposable loopback tests and is not shipped in the static site. See [dependency audit evidence](docs/submission/dependency-audit.md). This is a prototype, not a security-audited production system.
 
