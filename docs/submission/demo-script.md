@@ -21,4 +21,4 @@ Prepare deployment and wallet funding before recording. Do not cut away from tra
 
 ## Recorded local walkthrough
 
-A historical 64-second local EVM walkthrough covers generation, publication, designated-reviewer acceptance, changed-output detection, restoration and proof export. It records the earlier local prototype. The current Monad video and chain evidence above supersede the earlier pending-Testnet checkpoint. Saving the latest video link in the contest form and final submission remain pending.
+A historical 64-second local EVM walkthrough covers generation, publication, designated-reviewer acceptance, changed-output detection, restoration and proof export. It records the earlier local prototype. The current Monad video and chain evidence above supersede the earlier pending-Testnet checkpoint. The current video link is saved in the independently verified complete contest entry; see [submission confirmation](../../evidence/metropolis-submission-confirmation.json).

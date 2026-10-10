@@ -1,48 +1,38 @@
-# Metropolis readiness and action gates
+# Metropolis complete entry and verification
 
-Verified 9 October 2026. The [current platform policy](https://hackathon.monad.xyz/api/v1/policies/current), titled Metropolis Hackathon Rules & Guidelines, is **v3**, updated 3 September 2026; content hash `99725db2fe499bb7a57ec19bf3d504d93babe7e1450b514842ccc971d93a2209`. The same full rules appear in Dashboard → View the Rules. Use the complete policy, not only the [marketing FAQ](https://monad.xyz/metropolis), which states less strict open-source guidance.
+The complete AgentProof entry was saved **10 October 2026 at 03:35:44 UTC / 11:35:44 Beijing**, following the entrant's explicit instruction to submit directly after project verification. The authenticated dashboard displays **5/5 complete**, **All steps complete**, and **View submission**. [Public confirmation record](../../evidence/metropolis-submission-confirmation.json).
 
-## Deadline
+## How this platform submits
 
-Policy §4.2 uses **13 October 2026, 11:59 PM ET**. America/New_York is UTC−4 on that date: **14 October 03:59 UTC / 14 October 11:59 Asia/Shanghai**. The logged-in dashboard independently displays **OCT 14 · 11:59 GMT+8**, rechecked on 10 October. Platform timestamp controls; submit with a buffer. Dashboard access is not a guarantee of individual eligibility. The latest project-form attempt remained at Loading; saving the updated fields is not yet confirmed.
+The official `/api/v1/submission` response says that judges read the last saved copy at the deadline and there is no separate Submit operation. The published client uses `PUT /api/v1/submission/entry` for Save submission / Save changes. That operation returned HTTP 200 with `lastSavedAt: 2026-10-10T03:35:44.870Z`. A fresh independent read confirmed every updated field, all five required groups, `standing.eligible=true` and `missing=[]`. The dashboard subsequently checked the Submit your project step.
 
-## Required deliverables
+The earlier project form remained at Loading; the official save interface in the same authenticated participant session was used instead. No duplicate account, new OAuth authorization, policy acceptance, wallet signature or funds movement occurred. The outstanding-policy endpoint returned an empty list. Saved content remains editable before the deadline.
 
-| Item | Required by rules | Current state |
-|---|---|---|
-| One project, one track | Policy track/submission requirements | Solo project AgentProof created; Trust, Identity & AI Infrastructure selected in form |
-| Working product | Runnable third-party prototype | Actual Monad deployment, publication, reviewer acceptance and exported-package verification confirmed 10 October; wallet-free live verification available |
-| Public GitHub source | §§4.1 and 7.2: full source, setup README, OSI license, build-window history | Full source pushed to public JokerFuFu/agentproof-monad; MIT applied |
-| AI / external attribution | Disclose tools and dependencies | Drafted in README and project text |
-| Technical demo video | Public link, real operation, ≤3 minutes | Actual 63.88-second Monad read-only browser walkthrough published; anonymous download and SHA-256 verified |
-| Pitch video | Submission form requires a separate ≤2-minute video | Separate 63.88-second subtitle-only Monad Pitch published; anonymous download and SHA-256 verified; details in recorded-videos.md |
-| Project logo | Form requires PNG/JPG/WEBP, ≥500 px, ≤2 MB, ≤4 million pixels | Original 1024×1024 PNG, 28,395 bytes uploaded; preview and saved form verified |
-| Monad integration | Testnet or mainnet contract/transaction evidence | Chain 10143 registry and successful publication/review confirmed; see evidence/monad-acceptance.json |
-| Project page / description / acquisition strategy | Required platform fields and truthful statements | Private solo project created; track, description, acquisition, logo, GitHub URL and access instructions persisted; last saved 09:50 UTC |
+## Deadline and rules
 
-The five judging criteria each carry 20%: completeness, technical quality, Monad integration, track/problem fit and innovation/impact. The narrow receipt workflow targets a complete, inspectable demo; this is an implementation judgment, not a prediction of winning.
+Deadline: **14 October 2026, 11:59 Asia/Shanghai / 03:59 UTC**. The platform independently returns `2026-10-14T03:59:00.000Z` and the logged-in dashboard displays **OCT 14 · 11:59 GMT+8**.
 
-## Registration and terms
+The [full platform policy](https://hackathon.monad.xyz/api/v1/policies/current), Metropolis Hackathon Rules & Guidelines **v3**, updated 3 September, was verified on 9 October. Its content hash is `99725db2fe499bb7a57ec19bf3d504d93babe7e1450b514842ccc971d93a2209`; §4.2 uses 13 October 2026, 11:59 PM ET. The full policy takes priority over abbreviated marketing guidance. The five equally weighted criteria are completeness, technical quality, Monad integration, track/problem fit and innovation/impact.
 
-The GitHub session is reused. Approved public profile: JokerFuFu / jokerfufu, China / Beijing, GitHub JokerFuFu, AI product and engineering biography, AI agents/product design/full-stack development skills, solo participation and no public matchmaking. The approved contact email is intentionally excluded from this potential public repository; it is held only in the platform profile. Browser notifications and extra OAuth integrations are optional.
+## Saved deliverables
 
-The Dashboard showed profile completed. A solo team and the private project **AgentProof** have since been created; the project creation toast and saved name/tagline were observed. The assistant did **not** click the registration agreement checkbox or Finish Registration. The project form explicitly says the workspace is private to the team and organizers. Do not infer a separate eligibility guarantee from account access or project creation. Final entry is not submitted.
+| Item | Verified current state |
+|---|---|
+| Project and track | AgentProof, solo team, Trust, Identity & AI Infrastructure |
+| Project description and acquisition plan | Updated real Monad implementation, limits, attribution, planned opt-in pilot; no claimed existing customers or revenue |
+| Logo | Existing original 1024×1024 PNG retained, previously previewed and verified |
+| Public source | Complete source, setup README, MIT license, build-window history and dependency/AI attribution in JokerFuFu/agentproof-monad |
+| Working product | Public app independently verifies a real Monad Testnet Accepted receipt without a wallet |
+| Technical video | Actual 63.88-second Monad read-only walkthrough; link saved, anonymously accessible as video/mp4 |
+| Separate Pitch | Actual 63.88-second subtitle-only Pitch; link saved, anonymously accessible as video/mp4 |
+| Judge access | Exact public proof-package URL and import/read-only/verify/tamper/restore/export instructions saved |
+| Testnet evidence | Chain 10143 registry, successful deployment/registration/publication/review, expected runtime and live Accepted status verified |
+| Platform confirmation | HTTP 200 save and independent read; 5/5 required groups; dashboard All steps complete |
 
-The submission form was inspected on 9 October. Its checklist covers primary track, project details, logo, live product, and both videos. A fresh authenticated page confirmed **Progress saved**, **3/5** complete and last saved **09:50 UTC**. The correct track, description (2,080 characters), acquisition text (1,277 characters), logo preview, public GitHub URL and access instructions (555 characters) persisted. That earlier text described pending Monad deployment; Live product and video fields were empty. The actual Monad evidence and new videos now supersede those earlier draft contents. The 10 October authenticated dashboard still shows **4/5 onboarding steps**, with Submit your project unchecked. The submission page currently remains at Loading, so updated form contents have not been saved or independently confirmed. Final entry is not submitted.
+## Validation and permissions
 
-Eligibility declarations remain the entrant's responsibility. The rules require adult eligibility or verified guardian permission, exclude restricted persons/jurisdictions and certain organizer-related participants, and may require verification. The linked [Foundation Terms](https://monad.xyz/terms-of-service), updated 10 February 2026, separately require age 18+. They include individual arbitration/class-action waiver, liability limits and indemnity. Do not infer an age exception across the documents. [Privacy Policy](https://monad.xyz/privacy-policy) covers service providers, international processing and eligibility screening. No payment request has been observed in signup; prizes may require KYC and tax responsibility.
+The latest code checks passed **21/21 tests**, both Solidity targets compiled and Vite 7.3.7 built. The actual user-exported package and fresh command-line verification matched the live Monad registry. The public browser recording demonstrated unverified import, actual RPC verification, tamper failure, restoration, export and re-import. Both Release assets and both Pages MP4s downloaded anonymously with matching SHA-256 values. See [validation.md](validation.md) and [recorded-videos.md](recorded-videos.md).
 
-Public submissions retain entrant ownership but grant organizer/sponsors an ongoing worldwide nonexclusive promotional-use license; judging is nonconfidential. Confirm ownership and employer permissions. Do not upload private customer files or documents.
+The owner expressly authorized public MIT source, free GitHub Pages and both public videos, confirmed rights to open source the work, and later authorized direct contest submission. Existing approved profile and identity were reused. Contact email, request tokens, account identifiers, customer material and raw authenticated responses are excluded from the public confirmation record. Full authenticated save/read responses and the dashboard screenshot are retained in the private handoff.
 
-## Remaining consequential actions
-
-1. **Public source release:** Completed under explicit owner authorization on 9 October for public `JokerFuFu/agentproof-monad` source and MIT. Ownership/open-source permission was confirmed. The repository is PUBLIC, full source is pushed, and original code has the MIT license. No secrets, private profile email, customer code or unrelated project files are included.
-2. **Testnet signatures:** Completed by the user on 10 October: deployment, registration/publication and designated-reviewer acceptance. The exported synthetic proof package verifies against the real Monad contract. No additional signature is needed for independent read-only replay or recording. Additional future writes stay under the user's control; no real-fund transaction is authorized.
-3. **Public demo/video hosting:** Free GitHub Pages at `https://jokerfufu.github.io/agentproof-monad/` is built and browser-verified. Root license and upstream runtime notices are included. Two actual 63.88-second Monad videos are public in Release `v0.1.2-monad` and on Pages as browser-playable MP4s. All four downloads returned HTTP 200 with matching file hashes. Details in recorded-videos.md. No paid plan, custom domain or new OAuth provider was used. Do not ask for the same authorized scope again.
-4. **Final submission:** Review the complete platform page, real code/demo/video/contract links and each declaration immediately before Submit. No final submission approval has been obtained.
-
-If registration requires a new explicit agreement, present the exact policy, Terms and Privacy links together and obtain action-time confirmation. Ordinary setup and confirmed profile fields should not be asked again.
-
-## Latest prototype recheck
-
-The prototype fixes passed 21/21 tests and the Vite 7.3.7 build. The public page starts with Artifact checks; real Chrome run/tamper/restore and file import were tested. On 10 October the user supplied an actual Monad Accepted proof package, which independently verified against chain 10143. The user's latest authenticated dashboard screenshot showed **4/5 onboarding steps complete**, with Submit your project still unchecked. That dashboard count differs from the historical 3/5 project-form checklist above. Current video/live-product fields must be rechecked and saved before final submission.
+The server's current standing result is a platform checkpoint, not a prediction of winning. The complete rules and linked [Foundation Terms](https://monad.xyz/terms-of-service) and [Privacy Policy](https://monad.xyz/privacy-policy) govern personal eligibility and any later verification. No new eligibility attestation or policy acceptance was made while saving the entry. Historical notes retain their original checkpoint status; the complete save above supersedes earlier pending-submission statements.

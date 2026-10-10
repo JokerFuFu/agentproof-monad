@@ -1,4 +1,6 @@
-# Public project draft — not submitted
+# Public project entry — complete copy saved for judging
+
+Saved **10 October 2026, 03:35:44 UTC / 11:35:44 Beijing**. The authenticated dashboard shows **5/5 complete, All steps complete** and View submission. The platform judges the last saved copy at the deadline; there is no separate Submit operation. [Confirmation record](../../evidence/metropolis-submission-confirmation.json).
 
 - **Name:** AgentProof
 - **Tagline:** Verifiable receipts for agent deliveries.
@@ -10,7 +12,7 @@
 - **Monad deployment:** Chain 10143, registry [0x8c671ffbc6d61b6372acba06a93b92ce8bed9196](https://testnet.monadvision.com/address/0x8c671ffbc6d61b6372acba06a93b92ce8bed9196), deployed 10 October 2026.
 - **Demonstration evidence:** [Synthetic portable proof package](../../public/agentproof-monad-proof.json), [confirmed publication](https://testnet.monadvision.com/tx/0x2109b441c85d10f381814efc07236f6992a6e77442f2c9f550a04fd1af4d3fa4) and [reviewer acceptance](https://testnet.monadvision.com/tx/0xc6220d62b2c012a0716b296c5eff90bc51ad8f4dcf811042b9d135b89c8858b5).
 - **Technical video:** [Actual Monad verification walkthrough](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-demo.mp4), 63.88 seconds.
-- **Pitch video:** [Separate subtitle-only Pitch](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-pitch.mp4), 63.88 seconds. Both are also in the [public Monad Release](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad). Final contest submission remains pending.
+- **Pitch video:** [Separate subtitle-only Pitch](https://jokerfufu.github.io/agentproof-monad/agentproof-monad-pitch.mp4), 63.88 seconds. Both are also in the [public Monad Release](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad) and saved in the contest entry.
 
 ## Short description
 
@@ -32,8 +34,8 @@ An agent workflow can produce many small delivery and review receipts. Monad pro
 
 ## Limits and next steps
 
-The included checking agent is deterministic, not an LLM. A commitment proves an unchanged artifact, not accurate reasoning or successful AI execution. A designated reviewer supplies an opinion, and distinct wallet addresses do not prove distinct people. The prototype has no payments, reputation scoring or production security audit. Public source, static hosting, actual Monad Testnet acceptance and both public videos are complete. The remaining submission work is saving the latest project fields and reviewing the final declarations with the entrant.
+The included checking agent is deterministic, not an LLM. A commitment proves an unchanged artifact, not accurate reasoning or successful AI execution. A designated reviewer supplies an opinion, and distinct wallet addresses do not prove distinct people. The prototype has no payments, reputation scoring or production security audit. Public source, static hosting, actual Monad Testnet acceptance and both public videos are complete. Latest product/video links, project description and judge instructions were saved and independently read back from the platform; all five required groups are complete.
 
 ## Ownership, AI and attribution disclosure
 
-New original work began on 9 October 2026. OpenAI Codex assisted with product design, code, tests, browser acceptance and review. External components are viem, Vite, solc-js and Ganache; see README for upstream links and licenses. No code or private material from Portaldot, BidUltra or customer projects is included. The owner confirmed the right to release this work under MIT. Eligibility and final platform declarations remain for the entrant to review; this draft does not attest to them.
+New original work began on 9 October 2026. OpenAI Codex assisted with product design, code, tests, browser acceptance and review. External components are viem, Vite, solc-js and Ganache; see README for upstream links and licenses. No code or private material from Portaldot, BidUltra or customer projects is included. The owner confirmed the right to release this work under MIT and expressly authorized direct submission after verification. The existing participant account was active and the outstanding-policy list was empty at save time; no new policy acceptance or wallet action occurred during saving.

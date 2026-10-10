@@ -17,7 +17,7 @@ The Pitch uses the real product footage with separate captions about the problem
 
 Raw recording hash, retained segment ranges, exact captions, output probes and verification details are in [monad-recording-manifest.json](../../evidence/monad-recording-manifest.json). Chain coordinates and successful deployment/registration/publication/review transactions are in [monad-acceptance.json](../../evidence/monad-acceptance.json). The explorer link was present in the app, but a separate explorer-page navigation timed out; that unsuccessful navigation was omitted from the edited videos. The official RPC independently verified the contract and transactions. The videos do not imply that an explorer page loaded.
 
-**Final contest submission remains pending.** Public hosting does not establish that the platform has saved or submitted these links.
+Both current video links were saved in the complete contest entry on **10 October 03:35:44 UTC**. An independent platform read confirmed them, and the authenticated dashboard shows **5/5 complete, All steps complete**. The platform judges the last saved copy at the deadline. [Submission confirmation](../../evidence/metropolis-submission-confirmation.json).
 
 ## Historical local recordings — 9 October 2026
 

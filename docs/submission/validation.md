@@ -1,5 +1,13 @@
 # Validation evidence — Monad Testnet and local prototype
 
+## Complete platform entry — 10 October 2026, 03:35 UTC
+
+The entrant expressly authorized direct submission once project checks passed. The existing authenticated participant session remained active. `/policies/outstanding` returned an empty list. The platform's `/submission` response explicitly states that judges read the last saved copy at the deadline and there is no separate Submit operation.
+
+The same `PUT /api/v1/submission/entry` used by the platform's published Save submission / Save changes client saved the updated description, real live product, both actual Monad video links and judge access instructions. The existing project, track, logo and acquisition plan were retained. HTTP 200 returned `lastSavedAt: 2026-10-10T03:35:44.870Z`. A fresh independent GET confirmed all five changed fields exactly match the prepared values; all five required groups are complete, platform standing is eligible with no missing items, and the submission window is open.
+
+The authenticated dashboard then showed **5/5 complete**, **All steps complete** and **View submission**; the Submit your project step was checked. A native screenshot was retained in the private handoff. No new policy acceptance, wallet signing or funds movement occurred. [Public confirmation record](../../evidence/metropolis-submission-confirmation.json). Earlier pending-submission statements below are historical checkpoints.
+
 ## Actual Monad acceptance — 10 October 2026
 
 The entrant created two test accounts and personally approved deployment, agent registration, publication and reviewer acceptance on **Monad Testnet, chain 10143**. No assistant-held key or simulated wallet was used for these transactions.
@@ -13,7 +21,7 @@ The exported 2,586-byte synthetic package was independently verified at **2026-1
 | Publish receipt | [0x2109b441…f4d3fa4](https://testnet.monadvision.com/tx/0x2109b441c85d10f381814efc07236f6992a6e77442f2c9f550a04fd1af4d3fa4) | 69706546 |
 | Reviewer accepts | [0xc6220d62…8858b5](https://testnet.monadvision.com/tx/0xc6220d62b2c012a0716b296c5eff90bc51ad8f4dcf811042b9d135b89c8858b5) | 69707407 |
 
-Registry `0x8c671ffbc6d61b6372acba06a93b92ce8bed9196`; receipt `0x682921d6503d90af908f1c6de086b0b5f3f91a6d7caf8cf4a2556ad79a675e94`. The two accounts belong to the entrant; distinct addresses do not establish distinct people. The pending-review deadline was 11 October 02:30:36 UTC; the recorded acceptance remains inspectable after that deadline. Live revocation can still invalidate a receipt. Final contest submission remains pending.
+Registry `0x8c671ffbc6d61b6372acba06a93b92ce8bed9196`; receipt `0x682921d6503d90af908f1c6de086b0b5f3f91a6d7caf8cf4a2556ad79a675e94`. The two accounts belong to the entrant; distinct addresses do not establish distinct people. The pending-review deadline was 11 October 02:30:36 UTC; the recorded acceptance remains inspectable after that deadline. Live revocation can still invalidate a receipt. Submission was pending at this initial 02:37 UTC verification checkpoint; the later complete-save record above supersedes that status.
 
 ## Current build, public replay and recording — 10 October 2026
 
@@ -23,7 +31,7 @@ Source commit `14d08416456042fc542641e80a00d0a8f956ed13` and static site commit 
 
 Two separate subtitle-only videos of that actual Monad replay were published in [Release v0.1.2-monad](https://github.com/JokerFuFu/agentproof-monad/releases/tag/v0.1.2-monad). Both are 63.88-second H.264 MP4s at 1440×1040. Anonymous downloads match their local SHA-256 values. They are also served as `video/mp4` on Pages, site commit `61ead4e500065db4a88c235f8a01037bfcc62f9b`, with HTTP 200 and matching hashes. [Recording manifest](../../evidence/monad-recording-manifest.json), [recording details](recorded-videos.md). Signing happened before recording; the footage demonstrates actual read-only replay. A separate explorer-page navigation timed out and is omitted, while official RPC verification succeeded.
 
-The original authenticated contest session still shows the dashboard at **4/5 onboarding steps** and the correct 14 October 11:59 GMT+8 deadline. The project submission page remained at Loading after refresh, with no editable fields rendered. Saving the new live-product/video links and updated project text is not confirmed. Final contest submission and action-time declaration review remain pending.
+At the earlier recording checkpoint the authenticated contest dashboard showed **4/5 onboarding steps** and the correct 14 October 11:59 GMT+8 deadline. The project form remained at Loading after refresh. The subsequent official save and independent read above confirmed the complete entry, followed by the dashboard's **5/5** state; no form-loading recovery is implied.
 
 The following sections retain the historical local-development record. Their pending-Monad statements describe those earlier checkpoints; the actual Testnet acceptance above supersedes them.
 

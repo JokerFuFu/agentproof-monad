@@ -1,0 +1,47 @@
+{
+  "verifiedAt": "2026-10-10T03:38:26.068405+00:00",
+  "project": "AgentProof",
+  "track": "Trust, Identity & AI Infrastructure",
+  "lastSavedAt": "2026-10-10T03:35:44.870Z",
+  "lastSavedAtBeijing": "2026-10-10 11:35:44 Asia/Shanghai",
+  "submissionMechanism": "The platform judges the complete copy saved at the deadline; no separate Submit operation.",
+  "saveHttpStatus": 200,
+  "independentReadHttpStatus": 200,
+  "preparedFieldsMatchServer": {
+    "description": true,
+    "demoUrl": true,
+    "demoVideoUrl": true,
+    "pitchVideoUrl": true,
+    "accessInstructions": true
+  },
+  "requiredGroups": {
+    "primaryTrack": true,
+    "projectDetails": true,
+    "projectLogo": true,
+    "liveProduct": true,
+    "demoAndPitch": true
+  },
+  "completeGroups": 5,
+  "totalGroups": 5,
+  "dashboard": {
+    "complete": 5,
+    "total": 5,
+    "message": "All steps complete",
+    "entryLink": "View submission"
+  },
+  "platformStanding": {
+    "eligible": true,
+    "missing": []
+  },
+  "outstandingPolicyCount": 0,
+  "effectiveDeadline": "2026-10-14T03:59:00.000Z",
+  "effectiveDeadlineBeijing": "2026-10-14 11:59 Asia/Shanghai",
+  "productUrl": "https://jokerfufu.github.io/agentproof-monad/",
+  "repositoryUrl": "https://github.com/JokerFuFu/agentproof-monad",
+  "technicalVideoUrl": "https://jokerfufu.github.io/agentproof-monad/agentproof-monad-demo.mp4",
+  "pitchVideoUrl": "https://jokerfufu.github.io/agentproof-monad/agentproof-monad-pitch.mp4",
+  "walletActionsDuringSave": 0,
+  "newPolicyAcceptancesDuringSave": 0,
+  "authorization": "Entrant expressly authorized direct submission if the project checks passed.",
+  "supersedes": "Earlier pending-submission checkpoints in monad-acceptance.json and historical development notes."
+}
