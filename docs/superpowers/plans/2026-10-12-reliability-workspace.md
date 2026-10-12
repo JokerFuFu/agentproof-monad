@@ -18,34 +18,34 @@
 
 Files: `src/transactions.mjs`, `src/chain.mjs`, `tests/connection.test.mjs`, `tests/transactions.test.mjs`.
 
-- [ ] Add failing boundary tests to `transact(connection, actor, functionName, args, {onUpdate})` and `deployMonad(connection, {onUpdate})`: update receives `{hash,state:'broadcast'}` before `waitForTransactionReceipt` runs; timeout exposes `error.transaction` and blocks another submit.
-- [ ] Run `node --test tests/connection.test.mjs`, recording the failure before implementation.
-- [ ] Implement `trackTransaction(client, submit, details, onUpdate)`, `recoverTrackedTransaction(client, record)`, and `TransactionJournal(storage)`. States are broadcast, unknown, confirmed, reverted, replaced. Validate persisted coordinates; failed persistence retains an in-memory record and blocks writes. Recovery uses only read methods and checks exact from/to/input plus required confirmations.
-- [ ] Integrate all five write kinds into `chain.mjs`; export `recoveryConnection(record)` and `recoverChainTransaction(connection,record)`. Track viem replacement callbacks and clear registry-scoped agent IDs on deployment.
-- [ ] Test timeout, reload, storage denial, malformed journal, insufficient confirmations, reverted receipts, replacements and different RPC transaction contents. Run the focused tests until green.
+- [x] Add failing boundary tests to `transact(connection, actor, functionName, args, {onUpdate})` and `deployMonad(connection, {onUpdate})`: update receives `{hash,state:'broadcast'}` before `waitForTransactionReceipt` runs; timeout exposes `error.transaction` and blocks another submit.
+- [x] Run `node --test tests/connection.test.mjs`, recording the failure before implementation.
+- [x] Implement `trackTransaction(client, submit, details, onUpdate)`, `recoverTrackedTransaction(client, record)`, and `TransactionJournal(storage)`. States are broadcast, unknown, confirmed, reverted, replaced. Validate persisted coordinates; failed persistence retains an in-memory record and blocks writes. Recovery uses only read methods and checks exact from/to/input plus required confirmations.
+- [x] Integrate all five write kinds into `chain.mjs`; export `recoveryConnection(record)` and `recoverChainTransaction(connection,record)`. Track viem replacement callbacks and clear registry-scoped agent IDs on deployment.
+- [x] Test timeout, reload, storage denial, malformed journal, insufficient confirmations, reverted receipts, replacements and different RPC transaction contents. Run the focused tests until green.
 
 ## Task 2: Independent verification state and example
 
 Files: `src/main.js`, `tests/ui.test.mjs`.
 
-- [ ] Reproduce stale verified UI by completing `verify`, rejecting the next `verifyChainAnchor` call, then asserting review controls disabled and status unverified/unavailable.
-- [ ] Add one-click sample tests using the real fixture and a fetch boundary: zero writes/wallet accesses, cached Accepted hints discarded, fresh live query requested, RPC failure leaves local integrity available.
-- [ ] Implement downgrade-before-query, local integrity feedback independent of chain result, revision guarding, and query-only recovery. All write entrypoints reject unresolved journal records even if invoked directly.
-- [ ] Run `node --test tests/ui.test.mjs`. Verify an intact rejected/revoked receipt never implies broken content and a wrong connection cannot receive another registry's review.
+- [x] Reproduce stale verified UI by completing `verify`, rejecting the next `verifyChainAnchor` call, then asserting review controls disabled and status unverified/unavailable.
+- [x] Add one-click sample tests using the real fixture and a fetch boundary: zero writes/wallet accesses, cached Accepted hints discarded, fresh live query requested, RPC failure leaves local integrity available.
+- [x] Implement downgrade-before-query, local integrity feedback independent of chain result, revision guarding, and query-only recovery. All write entrypoints reject unresolved journal records even if invoked directly.
+- [x] Run `node --test tests/ui.test.mjs`. Verify an intact rejected/revoked receipt never implies broken content and a wrong connection cannot receive another registry's review.
 
 ## Task 3: Delivery workspace
 
 Files: `src/view.mjs`, `src/style.css`, `src/main.js`, `index.html`.
 
-- [ ] Create the source/checklist workspace, three status inspector, linked workflow, clear read-only example CTA, progressive connection controls, and exact version comparison. Preserve explicit labels, live status, keyboard focus and no-LLM copy.
-- [ ] Exercise empty source, malformed/oversized imports, output injection, source edits, tamper/restore and source restoration. Add behavior tests for comparisons and actionable states; avoid testing decorative implementation details.
-- [ ] Inspect desktop and 390px mobile in the actual browser; resolve layout overflow, focus and console errors.
+- [x] Create the source/checklist workspace, three status inspector, linked workflow, clear read-only example CTA, progressive connection controls, and exact version comparison. Preserve explicit labels, live status, keyboard focus and no-LLM copy.
+- [x] Exercise empty source, malformed/oversized imports, output injection, source edits, tamper/restore and source restoration. Add behavior tests for comparisons and actionable states; avoid testing decorative implementation details.
+- [x] Inspect desktop and 390px mobile in the actual browser; resolve layout overflow, focus and console errors.
 
 ## Task 4: Deliverable verification
 
 Files: `docs/candidate-validation.md`, external workspace `deliverables/` screenshots, diff and logs.
 
-- [ ] Run `npm test` and `npm run build`, save exit codes and complete logs. Ganache's optional native fallback is a known baseline warning.
-- [ ] Exercise browser RPC failures and pending recovery with explicit simulated boundaries; also attempt the real read-only Monad package query and report its actual outcome.
-- [ ] Capture actual candidate desktop/mobile screens and save screenshots to Library. Record returned Library IDs and provenance.
-- [ ] Review `git diff --check`, contract/package/submission file invariants and the original clean checkout. Produce a patch, diff summary and validation report. Leave the candidate local for review.
+- [x] Run `npm test` and `npm run build`, save exit codes and complete logs. Ganache's optional native fallback is a known baseline warning.
+- [x] Exercise browser RPC failures and pending recovery with explicit simulated boundaries; also attempt the real read-only Monad package query and report its actual outcome.
+- [x] Capture actual candidate desktop/mobile screens and save screenshots to Library. Record returned Library IDs and provenance.
+- [x] Review `git diff --check`, contract/package/submission file invariants and the original clean checkout. Produce a patch, diff summary and validation report. Leave the candidate local for review.

@@ -2,6 +2,16 @@
 
 Portable receipts for agent deliveries, with immutable commitments and a designated reviewer's decision. New independent work started on **9 October 2026** for Metropolis, Trust, Identity & AI Infrastructure.
 
+## Local candidate workspace (12 October 2026)
+
+The `candidate/reliability-ui` branch adds a responsive document workspace with separate **content integrity**, **chain anchor**, and **reviewer decision** states. Use **Load Monad example** for a fresh, wallet-free query of `public/agentproof-monad-proof.json`; cached file decisions are discarded. The source/checklist is synthetic and uses deterministic presence rules without an LLM. Compare the committed original with edited delivery text, try a tampered version, restore it, and verify again.
+
+Every wallet write saves its broadcast hash and public call coordinates before waiting for a receipt. A timeout means **result unknown** and blocks further writes until **Recover transaction status** queries that operation. It never automatically sends again or continues a registration/publication sequence after recovery. The recovery record survives reloads; raw source, delivery text and salt are not saved automatically, so export their proof package if you need them later. Confirmed replacements are found by sender/nonce with bounded, read-only block searches when those coordinates are available. If the original transaction identity cannot be established, writes remain blocked. Recovery rechecks canonical checkpoints and recently scanned blocks.
+
+Writes require browser Web Locks support to coordinate tabs. Read-only verification remains available without it. The Solidity contract, ABI, commitment formula and package version are unchanged. This candidate is local; competition submission files and the published app are unaffected.
+
+The acceptance script `scripts/check-browser-candidate.mjs` connects to an isolated Chrome instance on loopback debugging port 9237 and the local app on port 5197. It tests imports, empty states, tamper/restore, keyboard controls, 320/390/768/1440px layouts, simulated RPC failure, recovery against the existing public example transaction, and native browser locking. Evidence labels seeded/simulated cases explicitly and rejects send/sign RPC. Set `AGENTPROOF_PREVIEW_URL` and `AGENTPROOF_EVIDENCE_DIR` to override its local defaults.
+
 ## Run the working local demo
 
 Use Node 22.13 or newer. Node 26 is tested; Ganache falls back to its JavaScript implementation when its optional native bindings are unavailable.
@@ -67,7 +77,7 @@ The deployment button prepares network/address/transaction evidence for download
 
 ## Tests and materials
 
-`npm test` runs 21 tests. The original 12 exercise the proof engine and real compiled contract bytecode: content changes, malformed packages, permissions, duplicate receipts, self-review, expiry, terminal review, revocation, fake registry implementations and publication transactions, reconstructed identities, and actual wallet account selection. Nine additional UI/connection regressions cover public artifact-only mode, stale source publication, malformed output imports, wallet-free read-only lookup, registry changes and deployment state. Their wallet/RPC boundaries are mocked; they do not establish actual Monad integration. `npm run build` compiles both targets and builds the web app. The browser acceptance flow is recorded in `docs/submission/validation.md`.
+`npm test` runs 46 tests. The original 21 are preserved. Additional transaction and UI regressions cover broadcast persistence, unknown-result recovery, replacements after a timeout, canonical scan checkpoints, cross-tab coordination, stale verification withdrawal, read-only example loading and version comparison. Wallet/RPC unit boundaries are mocked; they do not establish actual Monad integration. `npm run build` compiles both targets and builds the web app. The original release acceptance flow remains in `docs/submission/validation.md`; local candidate evidence is documented separately.
 
 - [Submission draft](docs/submission/project.md)
 - [Three-minute demo script](docs/submission/demo-script.md)
