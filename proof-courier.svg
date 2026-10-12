@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <title>AgentProof proof courier</title>
+  <desc>An original purple robot carrying an unstamped receipt. Decorative AgentProof artwork, not an official Monad character.</desc>
+  <defs>
+    <linearGradient id="shell" x1="129" y1="90" x2="278" y2="217" gradientUnits="userSpaceOnUse"><stop stop-color="#D7C1FF"/><stop offset=".42" stop-color="#A47AF5"/><stop offset="1" stop-color="#5F359F"/></linearGradient>
+    <linearGradient id="body" x1="147" y1="207" x2="250" y2="301" gradientUnits="userSpaceOnUse"><stop stop-color="#A885EE"/><stop offset="1" stop-color="#4C296E"/></linearGradient>
+    <linearGradient id="paper" x1="261" y1="157" x2="339" y2="277" gradientUnits="userSpaceOnUse"><stop stop-color="#F6EDFF"/><stop offset="1" stop-color="#B4A5D7"/></linearGradient>
+    <linearGradient id="feet" x1="141" y1="315" x2="174" y2="347" gradientUnits="userSpaceOnUse"><stop stop-color="#BE97FF"/><stop offset="1" stop-color="#654190"/></linearGradient>
+    <linearGradient id="visor" x1="145" y1="111" x2="254" y2="186" gradientUnits="userSpaceOnUse"><stop stop-color="#2E2043"/><stop offset="1" stop-color="#140D24"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#AA81FF" stop-opacity=".12"/><stop offset="1" stop-color="#AA81FF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="209" cy="344" rx="143" ry="36" fill="url(#light)"/>
+  <ellipse cx="209" cy="350" rx="112" ry="12" fill="#160E26"/>
+  <ellipse cx="209" cy="350" rx="134" ry="17" stroke="#7F54BB" stroke-opacity=".5"/>
+  <path d="M49 258c-13-54 0-107 44-135m225 11c32 28 48 74 40 117" stroke="#9C77D9" stroke-opacity=".25" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <path d="M66 269v-16m-8 8h16M331 91v-12m-6 6h12" stroke="#BC99FF" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="343" cy="281" r="4" fill="#83E6C9" fill-opacity=".7"/><circle cx="86" cy="97" r="2" fill="#BC99FF"/>
+  <path d="M174 278l-15 44M224 278l10 44" stroke="#754BA6" stroke-width="25" stroke-linecap="round"/>
+  <path d="M175 288l-10 27M224 288l7 26" stroke="#B68BED" stroke-width="7" stroke-linecap="round"/>
+  <rect x="132" y="317" width="70" height="29" rx="14.5" fill="url(#feet)"/><rect x="218" y="317" width="73" height="29" rx="14.5" fill="url(#feet)"/>
+  <path d="M141 323h35m52 0h34" stroke="#E1C5FF" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M154 241c-24-4-44-19-52-48" stroke="#73429D" stroke-width="28" stroke-linecap="round"/>
+  <path d="M152 235c-23-6-39-19-44-39" stroke="#C097FF" stroke-opacity=".75" stroke-width="9" stroke-linecap="round"/>
+  <g transform="rotate(-18 98 176)"><rect x="78" y="146" width="42" height="54" rx="18" fill="url(#shell)"/><path d="M85 161v-10m12 8v-16m12 19v-11" stroke="#DAC0FF" stroke-width="7" stroke-linecap="round"/><path d="M111 182l9-13" stroke="#C098EF" stroke-width="11" stroke-linecap="round"/></g>
+  <path d="M245 242c20 9 34 11 45-1" stroke="#7645A4" stroke-width="28" stroke-linecap="round"/>
+  <path d="M248 236c20 9 29 10 39 3" stroke="#C397F7" stroke-width="8" stroke-linecap="round"/>
+  <rect x="143" y="203" width="112" height="98" rx="31" fill="url(#body)" stroke="#BB8CF0" stroke-opacity=".55" stroke-width="1.5"/>
+  <path d="M158 220c13-7 33-9 51-8" stroke="#D6B4FF" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+  <rect x="166" y="231" width="66" height="41" rx="12" fill="#251535" stroke="#BC8BEF" stroke-opacity=".35"/>
+  <path d="M180 243h36m-36 8h22m-22 8h29" stroke="#C6A8E9" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="184" cy="284" r="3" fill="#8C66B6"/><circle cx="199" cy="284" r="3" fill="#8C66B6"/><circle cx="214" cy="284" r="3" fill="#8C66B6"/>
+  <path d="M200 73V53" stroke="#A078DB" stroke-width="7" stroke-linecap="round"/><rect x="188" y="37" width="24" height="21" rx="8" fill="#C19BFF" stroke="#E5CCFF" stroke-width="1.5"/>
+  <rect x="119" y="73" width="162" height="139" rx="43" fill="url(#shell)" stroke="#E2C7FF" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M139 94c20-14 54-14 77-12" stroke="#F1DFFF" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+  <rect x="136" y="104" width="128" height="88" rx="30" fill="url(#visor)" stroke="#BE8CFF" stroke-width="2"/>
+  <path d="M144 123c8-11 18-14 32-13" stroke="#F0D9FF" stroke-opacity=".2" stroke-width="4" stroke-linecap="round"/>
+  <rect x="160" y="131" width="14" height="22" rx="7" fill="#A8F6D8"/><rect x="224" y="131" width="14" height="22" rx="7" fill="#A8F6D8"/>
+  <path d="M188 162c7 6 16 6 23 0" stroke="#B99BDE" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="154" cy="160" r="5" fill="#9D76C7" fill-opacity=".25"/><circle cx="246" cy="160" r="5" fill="#9D76C7" fill-opacity=".25"/>
+  <path d="M126 132v25m148-25v25" stroke="#4C286E" stroke-width="4" stroke-linecap="round"/>
+  <g transform="rotate(11 300 215)"><path d="M267 151h56l16 16v112l-12-6-12 6-12-6-12 6-12-6-12 6V151Z" fill="url(#paper)" stroke="#E5DAF8" stroke-width="1.5"/><path d="M323 151v16h16" fill="#B7A1D8"/><path d="M280 184h39m-39 10h27m-27 17h39m-39 10h39m-39 10h25" stroke="#7F6B9D" stroke-width="3" stroke-linecap="round"/><path d="M280 254h39" stroke="#9E8AB8" stroke-width="2" stroke-dasharray="3 4"/></g>
+  <path d="M278 249c0-9 6-15 14-14l10 2c7 2 8 12 1 17l-7 4c-8 4-18-1-18-9Z" fill="#BA90EB" stroke="#D5AFFC" stroke-width="1.5"/>
+</svg>
