@@ -5,12 +5,13 @@ export const workspaceView=`
 <header class="appHeader">
   <a class="brand" href="./" aria-label="AgentProof home">${receiptIcon}<span>AgentProof</span></a>
   <span class="workspaceName">Delivery workspace</span>
+  <button id="learn" class="guideButton" type="button" aria-haspopup="dialog">How it works <span aria-hidden="true">?</span></button>
   <span class="network" id="network">Artifact checks / no chain</span>
 </header>
 <main>
   <section class="intro" aria-labelledby="pageTitle">
-    <div><h1 id="pageTitle">Know what arrived.<br>Keep the proof.</h1><p>Inspect an agent’s delivery, check that its contents match,<br class="desktopBreak"> and look up the designated reviewer’s decision.</p></div>
-    <div class="startHere"><button id="loadExample" class="primary exampleButton">Load Monad example <span aria-hidden="true">↗</span></button><p>Existing Testnet receipt. Fresh read-only verification.<br>No wallet needed.</p><a href="#sourcePanel">Or create a synthetic delivery below</a></div>
+    <div class="heroCopy"><div class="heroContext"><span class="contextGlyph" aria-hidden="true">◇</span> Built for Monad Testnet <span class="prototypeTag">Prototype</span></div><h1 id="pageTitle">Know what arrived.<br>Keep the proof.</h1><p>Inspect an agent’s delivery, check its exact contents,<br class="desktopBreak"> and query the designated reviewer’s decision.</p><div class="startHere"><button id="loadExample" class="primary exampleButton">Load Monad example <span aria-hidden="true">↗</span></button><p>Fresh read-only verification. No wallet needed.</p><a href="#sourcePanel">Create a synthetic delivery</a></div></div>
+    <figure class="heroArt"><div class="artGrid" aria-hidden="true"></div><span class="artCorner topLeft" aria-hidden="true"></span><span class="artCorner bottomRight" aria-hidden="true"></span><div class="courierHalo" aria-hidden="true"></div><img class="courier" src="./proof-courier.svg" alt="" width="400" height="400" fetchpriority="high"><figcaption><b>The proof courier</b><span>Original AgentProof illustration</span></figcaption></figure>
   </section>
   <nav class="workflow" aria-label="Delivery workflow">
     <a href="#sourcePanel" id="stepPrepare"><span>1</span><div><b>Prepare</b><small>Source & checking rules</small></div></a>
@@ -30,9 +31,9 @@ export const workspaceView=`
         <label for="source">Source brief</label><textarea id="source" spellcheck="false" aria-describedby="sourceHelp"></textarea>
         <p id="sourceHelp" class="caption">A synthetic brief for testing. The sample rules check for literal dates, timezones and deliverable keywords.</p>
         <div class="runRow"><button id="run" class="primary">Run checking agent</button><button id="restoreSource" disabled>Restore committed source</button></div>
-        <div class="ruleNote"><span aria-hidden="true">⌁</span><p><b>Deterministic checklist v1</b><br>Presence rules only. No LLM, no external model request, no eligibility assessment.</p></div>
+        <div class="ruleNote"><span class="ruleAvatar" aria-hidden="true">${receiptIcon}</span><p><b>Deterministic checklist v1</b><br>Presence rules only. No LLM, no external model request, no eligibility assessment.</p></div>
         <div class="checksTop"><h3>Requirement checks</h3><span id="checkSummary">Not run yet</span></div>
-        <div id="checks" class="checks"><p class="emptyState">Run the checking agent to see exact source matches and missing fields.</p></div>
+        <div id="checks" class="checks"><div class="emptyState"><img src="./proof-courier.svg" alt="" width="56" height="56"><p>Ready for your first delivery.<br><span>Run the rules to see exact source matches and missing fields.</span></p></div></div>
         <details class="policyDetails"><summary>Read the checking policy</summary><p id="policyText">Detect an explicit date, timezone, demo, code link and write-up. Return exact matched source text and mark missing items. Presence checks do not assess the meaning of a clause.</p></details>
       </section>
       <section id="deliveryPanel" class="panel deliveryPanel" aria-labelledby="deliveryTitle">
@@ -69,4 +70,11 @@ export const workspaceView=`
   <details id="packageDetails" class="backupPanel" hidden><summary>Proof package · copy backup</summary><label for="packageText">Original proof package JSON</label><textarea id="packageText" readonly spellcheck="false"></textarea></details>
   <details id="deploymentDetails" class="backupPanel" hidden><summary>Confirmed Testnet deployment · copy backup</summary><label for="deploymentText">Public deployment evidence JSON</label><textarea id="deploymentText" readonly spellcheck="false"></textarea></details>
   <footer><span>AgentProof <span class="footerDivider">/</span> Monad Testnet prototype</span><span>Portable commitments. A designated reviewer’s decision.</span><a href="./LICENSE.txt">MIT license</a></footer>
-</main>`;
+</main>
+<dialog id="proofGuide" class="guideDialog" aria-labelledby="guideTitle">
+  <button id="guideClose" class="dialogClose" type="button" aria-label="Close guide" data-close-guide>×</button>
+  <div class="guideIntro"><img src="./proof-courier.svg" alt="" width="90" height="90"><div><p class="guideLabel">A quick field guide</p><h2 id="guideTitle">Read the three signals.</h2><p>Each answers a different question about a delivery.</p></div></div>
+  <div class="guideSignals"><div><span aria-hidden="true">≡</span><article><h3>Content integrity</h3><p>Recomputed commitments match the exact source, delivery and policy. Accuracy still needs a separate judgment.</p></article></div><div><span aria-hidden="true">◇</span><article><h3>Chain anchor</h3><p>A fresh query checks the registry, publication and live commitments. RPC failure leaves this state unverified.</p></article></div><div><span aria-hidden="true">◎</span><article><h3>Reviewer decision</h3><p>The designated wallet may accept or reject. Its decision is separate from unchanged content; a publisher can revoke.</p></article></div></div>
+  <div class="guideFooter"><button id="guideExample" class="primary" type="button">Open read-only example</button><button id="guideDismiss" type="button" data-close-guide>Keep exploring</button></div>
+  <p class="guideFootnote">The sample uses deterministic rules without an LLM. The proof courier is original AgentProof artwork.</p>
+</dialog>`;

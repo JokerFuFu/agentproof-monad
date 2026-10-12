@@ -1,5 +1,6 @@
 import './style.css';
 import {workspaceView} from './view.mjs';
+import {initializeGuide} from './experience.mjs';
 import {createManifest,verifyManifest,artifactHash,SAMPLE} from './proof.mjs';
 import {localConnection,monadConnection,readOnlyMonadConnection,deployMonad,transact,register,publishedId,verifyChainAnchor,STATUS,recoveryConnection,recoverChainTransaction} from './chain.mjs';
 import {validateAnchor} from './anchor.mjs';
@@ -333,3 +334,4 @@ window.addEventListener('storage',event=>{
   showTransaction();showAnchor();controls();
 });
 switchMode(mode,true);showIntegrity();showTransaction();controls();
+initializeGuide();

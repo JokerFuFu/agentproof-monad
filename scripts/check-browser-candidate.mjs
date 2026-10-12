@@ -5,6 +5,7 @@ import {resolve} from 'node:path';
 
 const origin=process.env.AGENTPROOF_PREVIEW_URL||'http://127.0.0.1:5197/';
 const out=resolve(process.env.AGENTPROOF_EVIDENCE_DIR||'../deliverables');
+const prefix=process.env.AGENTPROOF_SCREENSHOT_PREFIX||'agentproof';
 await mkdir(out,{recursive:true});
 const target=await (await fetch('http://127.0.0.1:9237/json/new?about:blank',{method:'PUT'})).json();
 const ws=new WebSocket(target.webSocketDebuggerUrl),pending=new Map();let sequence=0,loaded;
@@ -38,11 +39,32 @@ async function navigate(){
   await ready;loaded=null;await waitFor(`!!document.getElementById('loadExample')`);
 }
 async function resize(width,height=900){await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:width<600});}
-async function screenshot(name){await evaluate('scrollTo(0,0)');const layout=await send('Page.getLayoutMetrics');const size=layout.cssContentSize;const result=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width:Math.ceil(size.width),height:Math.ceil(size.height),scale:1}});await writeFile(resolve(out,name),Buffer.from(result.data,'base64'));}
+async function screenshot(name){await evaluate(`(async()=>{await document.fonts.ready;await new Promise(requestAnimationFrame);await Promise.allSettled(document.getAnimations().filter(a=>a.effect?.getComputedTiming().iterations!==Infinity).map(a=>a.finished));const style=document.documentElement.style,old=style.scrollBehavior;style.scrollBehavior='auto';scrollTo(0,0);await new Promise(requestAnimationFrame);style.scrollBehavior=old;})()`);const layout=await send('Page.getLayoutMetrics');const size=layout.cssContentSize;const result=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width:Math.ceil(size.width),height:Math.ceil(size.height),scale:1}});await writeFile(resolve(out,name),Buffer.from(result.data,'base64'));}
+async function key(key,code,number,modifiers=0){await send('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode:number,modifiers,...(key==='Enter'?{text:'\r',unmodifiedText:'\r'}:{})});await send('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode:number,modifiers});}
 async function upload(path){const {root}=await send('DOM.getDocument');const {nodeId}=await send('DOM.querySelector',{nodeId:root.nodeId,selector:'#import'});await send('DOM.setFileInputFiles',{nodeId,files:[path]});await waitFor(`!document.getElementById('run').disabled`);}
 
 try{
-  await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await resize(1440,1080);await navigate();
+  await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await resize(1440,1080);await navigate();await send('Page.bringToFront');
+  await waitFor(`document.querySelector('.courier').complete&&document.querySelector('.courier').naturalWidth>0`);
+  check(await evaluate(`document.querySelector('.courier').alt===''&&document.getElementById('reviewState').textContent==='Not recorded'`),'Decorative art conveyed a recorded decision');
+  report.steps.push({name:'Original decorative courier asset loads without fictional receipt state',passed:true});
+  await key('Tab','Tab',9);
+  check(await evaluate(`document.activeElement.classList.contains('skipLink')&&getComputedStyle(document.activeElement).outlineStyle==='solid'`),'Skip link or keyboard focus invisible');
+  report.steps.push({name:'Keyboard skip link and visible focus',passed:true});
+  await evaluate(`document.getElementById('learn').focus()`);await key('Enter','Enter',13);
+  check(await evaluate(`document.getElementById('proofGuide').matches(':modal')`),'Keyboard guide did not open as a native modal');
+  for(let i=0;i<6;i++){await key('Tab','Tab',9);check(await evaluate(`document.getElementById('proofGuide').contains(document.activeElement)`),'Guide focus escaped its modal');}
+  await key('Tab','Tab',9,8);check(await evaluate(`document.activeElement.id==='guideDismiss'`),'Guide reverse focus did not wrap');
+  await key('Escape','Escape',27);await waitFor(`!document.getElementById('proofGuide').open&&document.activeElement.id==='learn'`);
+  report.steps.push({name:'Guide keyboard open, forward/reverse focus containment, Escape and focus return',passed:true});
+  for(const [width,height] of [[320,568],[390,844]]){await resize(width,height);await evaluate(`document.getElementById('learn').click()`);const fit=await evaluate(`(()=>{const r=document.getElementById('proofGuide').getBoundingClientRect();return {width:innerWidth,left:r.left,right:r.right,height:r.height,viewport:innerHeight};})()`);check(fit.left>=0&&fit.right<=fit.width&&fit.height<=fit.viewport,'Mobile guide exceeds viewport');report.steps.push({name:'Mobile guide '+width+'×'+height,...fit});await evaluate(`document.getElementById('guideDismiss').click()`);}
+  await resize(1440,1080);
+  const contrast=await evaluate(`(()=>{const rgb=s=>s.match(/[\\d.]+/g).slice(0,3).map(Number),l=c=>c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);return [['body','body'],['.caption','.panel'],['#loadExample','#loadExample'],['#source','#source']].map(([f,b])=>{const a=l(rgb(getComputedStyle(document.querySelector(f)).color)),c=l(rgb(getComputedStyle(document.querySelector(b)).backgroundColor));return {element:f,ratio:Number(((Math.max(a,c)+.05)/(Math.min(a,c)+.05)).toFixed(2))};});})()`);
+  check(contrast.every(item=>item.ratio>=4.5),'Primary text contrast below 4.5');report.steps.push({name:'Body, secondary, primary action and editor contrast',contrast});
+  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
+  const reduced=await evaluate(`({media:matchMedia('(prefers-reduced-motion: reduce)').matches,animation:getComputedStyle(document.querySelector('.courier')).animationName,transition:getComputedStyle(document.getElementById('loadExample')).transitionDuration,scroll:getComputedStyle(document.documentElement).scrollBehavior,running:document.getAnimations().filter(a=>a.playState==='running').length})`);
+  check(reduced.media&&reduced.animation==='none'&&reduced.transition==='0s'&&reduced.scroll==='auto'&&reduced.running===0,'Reduced motion preference was not honored');report.steps.push({name:'Reduced motion disables decorative animation, transitions and smooth scroll',...reduced});
+  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});
   const source=await evaluate(`document.getElementById('source').value`);
   await fill('source',' ');await click('run');
   check(await evaluate(`document.getElementById('verify').disabled`),'Empty source enabled verification');
@@ -68,6 +90,10 @@ try{
   report.steps.push({name:'Keyboard editor tab switch',passed:true});
   await click('loadExample');let live=await states();check(live.anchor==='Verified on Monad Testnet','Real Monad example verification failed');
   report.steps.push({name:'Fresh actual read-only Monad verification',state:live,evidence:await text('chainEvidence')});
+  await evaluate(`document.getElementById('learn').click()`);await evaluate(`document.getElementById('loadExample').disabled=true`);await waitFor(`document.getElementById('guideExample').disabled`);
+  await evaluate(`document.getElementById('loadExample').disabled=false`);await waitFor(`!document.getElementById('guideExample').disabled`);
+  await evaluate(`document.getElementById('guideExample').click()`);await waitFor(`!document.getElementById('proofGuide').open&&!document.getElementById('loadExample').disabled&&document.getElementById('anchorState').textContent==='Verified on Monad Testnet'`);
+  report.steps.push({name:'Guide delegates only to the existing read-only example and respects busy UI',state:await states()});
   await click('tamper');await click('verify');check((await states()).integrity==='Content mismatch'&&(await states()).anchor.includes('Verified'),'Integrity and live anchor were conflated');
   report.steps.push({name:'Tampered delivery against actual chain',state:await states()});
   await click('restore');await click('verify');
@@ -87,12 +113,12 @@ try{
   check(lockCheck.submissions===1&&lockCheck.rejected===2,'Native browser write coordination failed');
   report.steps.push({name:'Native browser Web Locks coordinate independent journals',disclosure:'Submission boundaries simulated in local storage; no signing or transaction broadcast.',...lockCheck});
   // A new navigation removes transient test-history UI before deliverable capture.
-  await navigate();await click('loadExample');await resize(1440,1080);await screenshot('agentproof-desktop.png');
-  await resize(390,844);await screenshot('agentproof-mobile.png');
+  await navigate();await click('loadExample');await resize(1440,1080);await screenshot(prefix+'-desktop.png');
+  await resize(390,844);await screenshot(prefix+'-mobile.png');
   check(!report.rpcMethods.some(method=>/send|sign/i.test(method)),'Unexpected write RPC during browser acceptance');
   check(report.runtimeErrors.length===0,'Unhandled browser runtime errors');
   report.status='passed';
   await writeFile(resolve(out,'browser-candidate-checks.json'),JSON.stringify(report,null,2)+'\n');
-  console.log(JSON.stringify({status:report.status,checks:report.steps.length,runtimeErrors:report.runtimeErrors.length,writeRpcMethods:0,files:['agentproof-desktop.png','agentproof-mobile.png','browser-candidate-checks.json']},null,2));
+  console.log(JSON.stringify({status:report.status,checks:report.steps.length,runtimeErrors:report.runtimeErrors.length,writeRpcMethods:0,files:[prefix+'-desktop.png',prefix+'-mobile.png','browser-candidate-checks.json']},null,2));
 }catch(error){report.status='failed';report.error=error.message;await writeFile(resolve(out,'browser-candidate-checks.json'),JSON.stringify(report,null,2)+'\n');throw error;}
 finally{ws.close();}
